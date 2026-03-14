@@ -1,0 +1,120 @@
+#landing {
+  width: 86vw;
+  max-width: 1200px;
+  margin: auto;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+}
+
+#landingHeading {
+  width: 28rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#landingHeading ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  justify-content: space-between;
+  border: 1px solid #00000040;
+  border-radius: 1rem;
+  height: 5rem;
+}
+
+#landingHeading h1 {
+  font-size: 4rem;
+  margin: 4rem 0 0 0;
+}
+
+#landingHeading span {
+  text-decoration: underline;
+}
+
+#landingHeading h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #3f3f3f;
+  margin: 0 0 5rem 0;
+}
+
+#landingImg {
+  display: flex;
+  align-items: center;
+  height: 35rem;
+}
+
+#landingImg img {
+  width: 600px;
+  border-radius: 1rem;
+  border: 1px solid #00000040;
+  box-shadow: 0px 4px 6px 0px #0000004d;
+  margin-top: 4rem;
+}
+
+#leftIcon {
+  border-top-right-radius: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 1rem;
+}
+
+#rightIcon {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0;
+}
+
+#middleIcon {
+  border-radius: unset;
+}
+
+.inverted-6 {
+  --_g1: conic-gradient(from 90deg at 50% 75%, #a5c2ff 90deg, #2168ff 0)
+    no-repeat;
+  --_g2: conic-gradient(from 90deg at 50% 75%, #a5c2ff 90deg, #2168ff 0)
+    no-repeat;
+  background:
+    var(--_g1) 0 calc(134% - var(--_p, 0%)),
+    var(--_g2) 0 calc(134% - var(--_p, 0%)),
+    var(--_g1) 100% calc(200% - var(--_p, 0%)),
+    var(--_g2) 100% calc(200% - var(--_p, 0%)),
+    #000;
+  background-size: 50.2% 400%;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+  border-radius: 1rem;
+  width: 4rem;
+  padding: 8px;
+}
+.inverted-6:hover {
+  --_p: 134%;
+}
+
+.wavesLanding {
+  position: absolute;
+}
+
+#wavesLanding1 {
+  bottom: -120px;
+  right: -10rem;
+}
+
+#wavesLanding2 {
+  bottom: -140px;
+  right: -12rem;
+}
+
+#wavesLanding3 {
+  bottom: -160px;
+  right: -14rem;
+}

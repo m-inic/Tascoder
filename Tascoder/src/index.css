@@ -1,7 +1,7 @@
 body {
   font-family: "Outfit";
   height: 100%;
-  width: 100vw;
   margin: 0;
-  background-color: #e0eaff;
+  background-color: #0052ff45;
+  overflow-x: hidden;
 }
