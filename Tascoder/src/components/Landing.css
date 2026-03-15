@@ -54,8 +54,7 @@
 #landingImg img {
   width: 600px;
   border-radius: 1rem;
-  border: 1px solid #00000040;
-  box-shadow: 0px 4px 6px 0px #0000004d;
+  box-shadow: 0px 4px 6px 2px #0000004d;
   margin-top: 4rem;
 }
 
@@ -107,6 +106,7 @@
 #wavesLanding1 {
   bottom: -120px;
   right: -10rem;
+  opacity: 0.7;
 }
 
 #wavesLanding2 {
@@ -117,4 +117,5 @@
 #wavesLanding3 {
   bottom: -160px;
   right: -14rem;
+  opacity: 0.3;
 }

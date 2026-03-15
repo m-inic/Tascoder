@@ -1,0 +1,110 @@
+#introSection {
+  display: flex;
+  height: 52rem;
+  margin-top: 17rem;
+}
+
+#wavesIntroHolder {
+  position: absolute;
+  top: 94rem;
+  right: 0;
+  width: 100vw;
+}
+
+.wavesIntro {
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+#wavesIntro1 {
+  top: -10px;
+  opacity: 0.3;
+}
+
+#wavesIntro2 {
+  top: 10px;
+}
+
+#wavesIntro3 {
+  top: 30px;
+  opacity: 0.7;
+}
+
+#bunnsHolder {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 43rem;
+}
+
+#bunnsHolder li {
+  width: 14rem;
+  height: 25rem;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff80;
+  backdrop-filter: blur(7px);
+  border-radius: 1rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 4px 6px 0px #0000004d;
+  animation-duration: 10s;
+}
+
+#bunnsHolderItem1 {
+  align-self: flex-start;
+}
+
+#bunnsHolderItem2 {
+  align-self: flex-end;
+  animation-delay: 5s;
+}
+
+#bunnsHolderItem3 {
+  align-self: flex-start;
+}
+
+#bunnsHolderItem4 {
+  align-self: flex-end;
+  animation-delay: 5s;
+}
+
+.bunnsHolderImg {
+  width: 100%;
+  height: 13rem;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 1px solid #00000040;
+}
+
+#bunnsHolderImg1 {
+  background-image: url("../assets/bnnuyComp.jpg");
+}
+#bunnsHolderImg2 {
+  background-image: url("../assets/bunn.jpg");
+  background-position: 16rem;
+}
+#bunnsHolderImg3 {
+  background-image: url("../assets/bunns.jpg");
+  background-position: center;
+}
+#bunnsHolderImg4 {
+  background-image: url("../assets/bunnyComp.jpg");
+}
+
+#bunnsHolder p {
+  margin: 0;
+  height: 5rem;
+}
+
+#bunnsHolder h3 {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
