@@ -1,7 +1,38 @@
 import "./Intro.css";
-import 'animate.css';
+import "animate.css";
+import { useState } from "react";
 
 export default function Intro() {
+  const [isHovered, setIsHovered] = useState(null);
+
+  const getClass = (id) =>
+    isHovered === id
+      ? ""
+      : "animate__animated animate__shakeY animate__infinite infinite";
+
+  const cards = [
+    {
+      id: 1,
+      title: "Bnnuy za compom🤔",
+      text: "Svakim potevima kada zus uci, on stavi naocaru i razmislja o meslima.",
+    },
+    {
+      id: 2,
+      title: "Bnnuy dasu🦁",
+      text: "Ovo odvazno zoso se ne boji od NIKHIM, e ponim voli tocu",
+    },
+    {
+      id: 3,
+      title: "Bnnuy mali🐁",
+      text: "Mali zos na sliki lici na poljskem mesevema, e nekad eh pomesaju",
+    },
+    {
+      id: 4,
+      title: "Bnnuy designer💻",
+      text: "Ovi zos je onaj kem je napravio ovaj sajt, on pise ovaj TEXT",
+    },
+  ];
+
   return (
     <>
       <section id="introSection">
@@ -83,26 +114,19 @@ export default function Intro() {
           </svg>
         </div>
         <ul id="bunnsHolder">
-          <li id="bunnsHolderItem1" className="animate__animated animate__shakeY animate__infinite	infinite">
-            <div className="bunnsHolderImg" id="bunnsHolderImg1"></div>
-            <h3>Bnnuy za compom🤔</h3>
-            <p>Svakim potevima kada zus uci, on stavi naocaru i razmislja o meslima.</p>
-          </li>
-          <li id="bunnsHolderItem2" className="animate__animated animate__shakeY animate__infinite	infinite">
-            <div className="bunnsHolderImg" id="bunnsHolderImg2"></div>
-            <h3>Bnnuy dasu🦁</h3>
-            <p>Ovo odvazno zoso se ne boji od NIKHIM, e ponim voli tocu</p>
-          </li>
-          <li id="bunnsHolderItem3" className="animate__animated animate__shakeY animate__infinite	infinite">
-            <div className="bunnsHolderImg" id="bunnsHolderImg3"></div>
-            <h3>Bnnuy mali🐁</h3>
-            <p>Mali zos na sliki lici na poljskem mesevema, e nekad eh pomesaju</p>
-          </li>
-          <li id="bunnsHolderItem4" className="animate__animated animate__shakeY animate__infinite	infinite">
-            <div className="bunnsHolderImg" id="bunnsHolderImg4"></div>
-            <h3>Bnnuy designer💻</h3>
-            <p>Ovi zos je onaj kem je napravio ovaj sajt, on pise ovaj TEXT</p>
-          </li>
+          {cards.map(({ id, title, text }) => (
+            <li
+              key={id}
+              id={`bunnsHolderItem${id}`}
+              className={getClass(id)}
+              onMouseEnter={() => setIsHovered(id)}
+              onMouseLeave={() => setIsHovered(null)}
+            >
+              <div className="bunnsHolderImg" id={`bunnsHolderImg${id}`}></div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </li>
+          ))}
         </ul>
       </section>
     </>

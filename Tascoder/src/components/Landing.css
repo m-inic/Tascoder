@@ -104,18 +104,15 @@
 }
 
 #wavesLanding1 {
-  bottom: -120px;
-  right: -10rem;
+  bottom: -18rem;
   opacity: 0.7;
 }
 
 #wavesLanding2 {
-  bottom: -140px;
-  right: -12rem;
+  bottom: -19rem;
 }
 
 #wavesLanding3 {
-  bottom: -160px;
-  right: -14rem;
+  bottom: -20rem;
   opacity: 0.3;
 }
