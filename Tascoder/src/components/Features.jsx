@@ -25,11 +25,11 @@ export default function Features() {
 
   const scrollYAxis = useScrollPosition();
 
-  const bunnImgSrc = () => {if(scrollYAxis > 10 && scrollYAxis < 2300) {
+  const bunnImgSrc = () => {if(scrollYAxis > 10 && scrollYAxis < 2250) {
     return bnnuComp;
-  } else if(scrollYAxis > 2300 && scrollYAxis < 2800) {
+  } else if(scrollYAxis > 2251 && scrollYAxis < 2700) {
     return bunnComp;
-  } else if(scrollYAxis > 2800) {
+  } else if(scrollYAxis >= 2700) {
     return bunn;
   }}
   
@@ -70,7 +70,7 @@ export default function Features() {
         </div>
       </div>
       <div id="featuresImagesHolder">
-        <img src={bunnImgSrc()} alt="" className="img1" />
+        <img key={bunnImgSrc()} src={bunnImgSrc()} alt="" className="img1 animate__animated animate__fadeIn" />
       </div>
     </section>
   );
