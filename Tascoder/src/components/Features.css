@@ -1,9 +1,9 @@
 #featuresSection {
   margin-top: 15rem;
-    height: 100rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  height: 100rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #featuresInfoHolder {
@@ -13,19 +13,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  max-width: 33rem;
 }
 
 .featuresInfo {
   height: 30%;
-}
-
-#featuresInfo1 {
-}
-
-#featuresInfo2 {
-}
-
-#featuresInfo3 {
 }
 
 .featuresInfo h2 {
@@ -52,7 +44,7 @@
 
 #featuresImagesHolder {
   width: 40%;
-  height: 95%;
+  height: 94%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -27,7 +27,7 @@ export default function Features() {
 
   const bunnImgSrc = () => {if(scrollYAxis > 10 && scrollYAxis < 2250) {
     return bnnuComp;
-  } else if(scrollYAxis > 2251 && scrollYAxis < 2700) {
+  } else if(scrollYAxis >= 2251 && scrollYAxis < 2700) {
     return bunnComp;
   } else if(scrollYAxis >= 2700) {
     return bunn;
@@ -37,7 +37,7 @@ export default function Features() {
   return (
     <section id="featuresSection">
       <div id="featuresInfoHolder">
-        <div id="featuresInfo1" className="featuresInfo">
+        <div className="featuresInfo">
           <h2>Moze da se radi ovo</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -47,7 +47,7 @@ export default function Features() {
           </p>
           <h3>To smo svi znali</h3>
         </div>
-        <div id="featuresInfo2" className="featuresInfo">
+        <div className="featuresInfo">
           <h2>A moze da se radi i ono</h2>
           <p>
             It has survived not only five centuries, but also the leap into
@@ -57,7 +57,7 @@ export default function Features() {
           </p>
           <h3>To je impresivno</h3>
         </div>
-        <div id="featuresInfo3" className="featuresInfo">
+        <div className="featuresInfo">
           <h2>I ovo je sve vreme moguce</h2>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
