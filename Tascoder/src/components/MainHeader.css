@@ -67,7 +67,7 @@ nav {
 }
 
 #navBtn {
-  background: linear-gradient(135deg, #a5c2ff, #2168ff);
+  background: linear-gradient(135deg, #6d9bff, #2168ff);
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
 }
@@ -75,5 +75,5 @@ nav {
 #navListHolder #navBtn:hover {
   font-weight: bold;
   color: black;
-  background: linear-gradient(135deg, #2168ff, #a5c2ff);
+  background: linear-gradient(135deg, #2168ff, #6d9bff);
 }

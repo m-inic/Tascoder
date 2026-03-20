@@ -7,25 +7,31 @@ export default function Deals() {
       title: "Basic",
       price: 20,
       image: "src/assets/carrot1.png",
-      titleDescription: "Starter pack to test the waters",
-      description: ["one", "two", "three", "four", "five", "six"],
+      titleDescription: "Test the water",
+      description: [
+        "Lorem Ipsum is simply",
+        "been the industry's",
+        "1960s with the release",
+        "type specimen book",
+        "of type and scrambled",
+        "default model text, and",
+      ],
     },
     {
       id: 1,
       title: "Improved",
       price: 40,
       image: "src/assets/carrot2.png",
-      titleDescription: "The waters are tested, now the real thing",
+      titleDescription: "Now the real thing",
       description: [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight",
-        "nine",
+        "printer took a galley",
+        "of type and scrambled",
+        "type specimen book",
+        "but also the leap",
+        "less normal distribution",
+        "PageMaker including",
+        "If you use this site",
+
       ],
     },
     {
@@ -33,34 +39,36 @@ export default function Deals() {
       title: "Advanced",
       price: 60,
       image: "src/assets/carrot3.png",
-      titleDescription: "Only for true masters of their craft",
+      titleDescription: "Habit is made",
       description: [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight",
-        "nine",
-        "ten",
-        "eleven",
-        "twelve",
+        "of type and scrambled",
+        "less normal distribution",
+        "but also the leap",
+        "If you use this site",
+        "printer took a galley",
+        "characteristic words etc",
+        "generators on the Internet",
+        "handful of model",
+        "There is no minimum",
+
       ],
     },
   ];
+
   const dealsCards = dealsList.map((deal) => (
-    <li key={deal.id}>
+    <li key={deal.id} className="dealsListItem">
       <img src={deal.image} alt="" />
-      <div>
+      <div className="dealsTitle">
         <h2>{deal.title}</h2>
         <p>{deal.titleDescription}</p>
       </div>
-      <p>{deal.price}</p>
-      <ul>
+      <div className="dealsPriceHolder">
+        <p className="dealsPrice">{deal.price}</p>
+        <button className="dealsPriceBtn">Start now</button>
+      </div>
+      <ul className="dealsFeaturesList">
         {deal.description.map((el, ind) => (
-          <li key={ind}>{el}</li>
+          <li key={ind}><p>{el}</p></li>
         ))}
       </ul>
     </li>
@@ -68,8 +76,7 @@ export default function Deals() {
 
   return (
     <section id="dealsSection">
-      <ul>{dealsCards}</ul>
-      <img src="src/assets/carrot1.png" alt="" />
+      <ul id="dealsList">{dealsCards}</ul>
     </section>
   );
 }

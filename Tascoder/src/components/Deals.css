@@ -1,3 +1,105 @@
 #dealsSection {
-    height: 60rem;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+#dealsList {
+  display: flex;
+  height: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  padding: 0;
+}
+
+.dealsListItem {
+  background: linear-gradient(135deg, #9ab9ff, #256aff);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 13px -3px #256aff;
+  padding: 1rem;
+}
+
+.dealsListItem img {
+  height: 3rem;
+}
+
+.dealsTitle {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dealsTitle h2 {
+  margin: 0;
+}
+
+.dealsTitle p {
+  margin: 0;
+}
+
+.dealsPriceHolder {
+  display: flex;
+  width: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dealsPrice {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.dealsPriceBtn {
+  background: linear-gradient(135deg, #ffa46d, #ff5f50);
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  border: 2px solid white;
+  font-size: 20px;
+  color: white;
+  font-family: Outfit;
+}
+
+.dealsFeaturesList {
+  height: 16rem;
+  align-self: flex-start;
+  padding-left: 1rem;
+  width: 95%;
+}
+
+.dealsFeaturesList li {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.dealsFeaturesList li p {
+  margin: 0;
+  width: 90%;
+}
+
+.dealsFeaturesList li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../assets/listTick.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
 }
