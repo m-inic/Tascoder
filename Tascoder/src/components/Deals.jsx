@@ -5,7 +5,7 @@ export default function Deals() {
     {
       id: 0,
       title: "Basic",
-      price: 20,
+      price: "$20",
       image: "src/assets/carrot1.png",
       titleDescription: "Test the water",
       description: [
@@ -20,7 +20,7 @@ export default function Deals() {
     {
       id: 1,
       title: "Improved",
-      price: 40,
+      price: "$40",
       image: "src/assets/carrot2.png",
       titleDescription: "Now the real thing",
       description: [
@@ -31,13 +31,12 @@ export default function Deals() {
         "less normal distribution",
         "PageMaker including",
         "If you use this site",
-
       ],
     },
     {
       id: 2,
       title: "Advanced",
-      price: 60,
+      price: "$60",
       image: "src/assets/carrot3.png",
       titleDescription: "Habit is made",
       description: [
@@ -50,7 +49,6 @@ export default function Deals() {
         "generators on the Internet",
         "handful of model",
         "There is no minimum",
-
       ],
     },
   ];
@@ -64,11 +62,16 @@ export default function Deals() {
       </div>
       <div className="dealsPriceHolder">
         <p className="dealsPrice">{deal.price}</p>
-        <button className="dealsPriceBtn">Start now</button>
+        <div className="dealsPriceBtnHolder">
+          <div className="dealsPriceBtnBg"></div>
+          <button className="dealsPriceBtn">Start now</button>
+        </div>
       </div>
       <ul className="dealsFeaturesList">
         {deal.description.map((el, ind) => (
-          <li key={ind}><p>{el}</p></li>
+          <li key={ind}>
+            <p>{el}</p>
+          </li>
         ))}
       </ul>
     </li>
@@ -76,6 +79,10 @@ export default function Deals() {
 
   return (
     <section id="dealsSection">
+      <div id="dealsSectionTitles">
+        <h1>Za svakog postoji odgovarajuci plan</h1>
+        <h2>Kreni sa besplatnim, zavrsi za najboljim. Koristi <span>Tascoder</span> i ucini posao laksim.</h2>
+      </div>
       <ul id="dealsList">{dealsCards}</ul>
     </section>
   );

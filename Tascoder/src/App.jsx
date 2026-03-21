@@ -4,6 +4,7 @@ import Features from './components/Features'
 import Intro from './components/Intro'
 import Landing from './components/Landing'
 import MainHeader from './components/MainHeader'
+import Showcase from './components/Showcase'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Intro></Intro>
     <Features></Features>
     <Deals></Deals>
+    <Showcase></Showcase>
     </>
   )
 }

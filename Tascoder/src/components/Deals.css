@@ -1,9 +1,32 @@
 #dealsSection {
   height: 60rem;
+  flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 10rem;
+}
+
+#dealsSectionTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Outfit;
+}
+
+#dealsSectionTitles h1 {
+  font-size: 3rem;
+}
+
+#dealsSectionTitles h2 {
+  color: #484848;
+  margin: 0 0 3rem 0;
+  width: 28rem;
+  text-align: center;
+}
+
+#dealsSectionTitles span {
+  color: black;
 }
 
 #dealsList {
@@ -17,7 +40,7 @@
 
 .dealsListItem {
   background: linear-gradient(135deg, #9ab9ff, #256aff);
-  height: 100%;
+  height: 616px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +51,7 @@
   border: 1px solid #ffffff;
   box-shadow: 0px 0px 13px -3px #256aff;
   padding: 1rem;
+  max-width: 316px;
 }
 
 .dealsListItem img {
@@ -45,10 +69,13 @@
 
 .dealsTitle h2 {
   margin: 0;
+  font-size: 32px;
 }
 
 .dealsTitle p {
   margin: 0;
+  color: #ffffff;
+  text-shadow: -1px 1px 2px #000000;
 }
 
 .dealsPriceHolder {
@@ -58,19 +85,46 @@
   align-items: center;
 }
 
+.dealsPriceBtnHolder {
+  position: relative;
+}
+
 .dealsPrice {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
+  width: 5rem;
+  text-align: center;
+}
+
+.dealsPriceBtnBg {
+  position: absolute;
+  width: 128px;
+  height: 2.5rem;
+  background: white;
+  border-radius: 8px;
+  top: 3px;
+  right: 0px;
+  z-index: 0;
 }
 
 .dealsPriceBtn {
   background: linear-gradient(135deg, #ffa46d, #ff5f50);
-  padding: 10px 16px 10px 16px;
   border-radius: 8px;
-  border: 2px solid white;
   font-size: 20px;
   color: white;
   font-family: Outfit;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  transition: all 0.2s;
+  z-index: 2;
+  position: relative;
+  padding: 0;
+}
+
+.dealsPriceBtn:hover {
+  transform: translateY(3px);
+  cursor: pointer;
 }
 
 .dealsFeaturesList {
