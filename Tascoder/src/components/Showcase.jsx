@@ -1,4 +1,10 @@
 import "./Showcase.css";
+import desktop from "../assets/desktop.png";
+import android from "../assets/android.png"
+import appleIOS from "../assets/appleIOS.png"
+import huaweiMoj from "../assets/huaweiMoj.png"
+import browser from "../assets/browser.png"
+import mail from "../assets/mail.png"
 
 export default function Showcase() {
   return (
@@ -12,29 +18,29 @@ export default function Showcase() {
       </div>
       <div id="showcaseSectionNav">
         <ul id="showcaseSectionList">
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="1">
+            <img src={desktop} alt="" />
+            <p>Desktop</p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="2">
+            <img src={android} alt="" />
+            <p>Android</p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="3">
+            <img src={appleIOS} alt="" />
+            <p>iOS</p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="4">
+            <img src={huaweiMoj} alt="" />
+            <p>Wearables</p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="5">
+            <img src={browser} alt="" />
+            <p>Browser extensions</p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <p></p>
+          <li key="6">
+            <img src={mail} alt="" />
+            <p>Email add-ons</p>
           </li>
         </ul>
       </div>

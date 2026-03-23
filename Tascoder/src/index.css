@@ -6,3 +6,8 @@ body {
   overflow-x: hidden;
   color: #0c0c0c;
 }
+
+body::selection {
+  background-color: #ffa46d;
+  color: white;
+}
