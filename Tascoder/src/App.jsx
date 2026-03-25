@@ -1,4 +1,5 @@
 import './App.css'
+import AvailableOptions from './components/AvailableOptions'
 import Deals from './components/Deals'
 import Features from './components/Features'
 import Intro from './components/Intro'
@@ -15,6 +16,7 @@ function App() {
     <Features></Features>
     <Deals></Deals>
     <Showcase></Showcase>
+    <AvailableOptions></AvailableOptions>
     </>
   )
 }
