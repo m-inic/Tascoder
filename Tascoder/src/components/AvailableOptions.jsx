@@ -2,9 +2,12 @@ import "./AvailableOptions.css";
 import bunn from "../assets/bunn.jpg";
 import zus from "../assets/bnnuyComp.jpg";
 import zes from "../assets/bunns.jpg";
-import pfpBun1 from "../assets/pfpBunn1.jpg"
-import pfpBun2 from "../assets/pfpBunn2.png"
-import pfpBun3 from "../assets/pfpBunn3.jpg"
+import pfpBun1 from "../assets/pfpBunn1.jpg";
+import pfpBun2 from "../assets/pfpBunn2.png";
+import pfpBun3 from "../assets/pfpBunn3.jpg";
+import icon1 from "../assets/mail.png"
+import icon2 from "../assets/desktop.png"
+import icon3 from "../assets/listTick.png"
 
 export default function AvailableOptions() {
   return (
@@ -18,23 +21,30 @@ export default function AvailableOptions() {
           </p>
           <ul>
             <li>
-              <img alt="" />
-              <span>Nam blandit nisi</span> ut erat pretium, vitae placerat nisi
-              hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut
-              id turpis. Suspendisse.
+              <img src={icon1} alt="" />
+              <span>Nam blandit nisi</span>
+              <p>
+                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
+                placerat purus malesuada dignissim ut id turpis. Suspendisse.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Cras odio ex, euismod</span> a arcu ac, condimentum porta
-              velit. Proin quis condimentum nisl. Suspendisse orci massa,
-              condimentum sit amet varius eget, interdum ut augue.
+              <img src={icon2} alt="" />
+              <span>Cras odio ex, euismod</span>
+              <p>
+                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
+                Suspendisse orci massa, condimentum sit amet varius eget,
+                interdum ut augue.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Praesent vulputate consectetur</span> dictum. Proin lacinia
-              ornare massa quis commodo. Praesent feugiat fermentum diam at
-              laoreet. Morbi finibus dui lectus, aliquet molestie augue
-              tristique.
+              <img src={icon3} alt="" />
+              <span>Praesent vulputate consectetur</span>
+              <p>
+                dictum. Proin lacinia ornare massa quis commodo. Praesent
+                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
+                aliquet molestie augue tristique.
+              </p>
             </li>
           </ul>
           <q>
@@ -64,23 +74,33 @@ export default function AvailableOptions() {
           </p>
           <ul>
             <li>
-              <img alt="" />
-              <span>Nam blandit nisi</span> ut erat pretium, vitae placerat nisi
-              hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut
-              id turpis. Suspendisse.
+              <img src={icon1} alt="" />
+
+              <span>Nam blandit nisi</span>
+              <p>
+                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
+                placerat purus malesuada dignissim ut id turpis. Suspendisse.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Cras odio ex, euismod</span> a arcu ac, condimentum porta
-              velit. Proin quis condimentum nisl. Suspendisse orci massa,
-              condimentum sit amet varius eget, interdum ut augue.
+              <img src={icon2} alt="" />
+
+              <span>Cras odio ex, euismod</span>
+              <p>
+                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
+                Suspendisse orci massa, condimentum sit amet varius eget,
+                interdum ut augue.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Praesent vulputate consectetur</span> dictum. Proin lacinia
-              ornare massa quis commodo. Praesent feugiat fermentum diam at
-              laoreet. Morbi finibus dui lectus, aliquet molestie augue
-              tristique.
+              <img src={icon3} alt="" />
+
+              <span>Praesent vulputate consectetur</span>
+              <p>
+                dictum. Proin lacinia ornare massa quis commodo. Praesent
+                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
+                aliquet molestie augue tristique.
+              </p>
             </li>
           </ul>
           <q>
@@ -110,23 +130,30 @@ export default function AvailableOptions() {
           </p>
           <ul>
             <li>
-              <img alt="" />
-              <span>Nam blandit nisi</span> ut erat pretium, vitae placerat nisi
-              hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut
-              id turpis. Suspendisse.
+              <img src={icon1} alt="" />
+              <span>Nam blandit nisi</span>
+              <p>
+                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
+                placerat purus malesuada dignissim ut id turpis. Suspendisse.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Cras odio ex, euismod</span> a arcu ac, condimentum porta
-              velit. Proin quis condimentum nisl. Suspendisse orci massa,
-              condimentum sit amet varius eget, interdum ut augue.
+              <img src={icon2} alt="" />
+              <span>Cras odio ex, euismod</span>
+              <p>
+                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
+                Suspendisse orci massa, condimentum sit amet varius eget,
+                interdum ut augue.
+              </p>
             </li>
             <li>
-              <img alt="" />
-              <span>Praesent vulputate consectetur</span> dictum. Proin lacinia
-              ornare massa quis commodo. Praesent feugiat fermentum diam at
-              laoreet. Morbi finibus dui lectus, aliquet molestie augue
-              tristique.
+              <img src={icon3} alt="" />
+              <span>Praesent vulputate consectetur</span>
+              <p>
+                dictum. Proin lacinia ornare massa quis commodo. Praesent
+                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
+                aliquet molestie augue tristique.
+              </p>
             </li>
           </ul>
           <q>
