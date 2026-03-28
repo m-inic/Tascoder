@@ -26,16 +26,25 @@
   font-size: 2.5rem;
 }
 
+.availableOptionsTextsHolder h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
 .availableOptionsTextsHolder p {
   margin: 0;
   font-size: 20px;
+  position: absolute;
+  left: 41px;
+  top: 24px;
+  display: none;
 }
 
 .availableOptionsTextsHolder ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 22rem;
+  height: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -43,13 +52,14 @@
 
 .availableOptionsTextsHolder li {
   margin: 0;
-  padding: 10px 10px 0px 15px;
+  padding: 24px 10px 24px 15px;
   width: 25rem;
-  height: 2rem;
+  height: 24px;
   font-size: 20px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #6d9bff, #2168ff);
+  background: linear-gradient(135deg, #b2cbff, #6e9cff);
   overflow: hidden;
+  position: relative;
 }
 
 .availableOptionsTextsHolder q {
@@ -126,4 +136,23 @@
 
 .availableOptionsProfile span {
   font-size: 14px;
+}
+
+#availableOptionsItem1 {
+}
+#availableOptionsItem2 {
+}
+#availableOptionsItem3 {
+}
+#availableOptionsItem4 {
+}
+#availableOptionsItem5 {
+}
+#availableOptionsItem6 {
+}
+#availableOptionsItem7 {
+}
+#availableOptionsItem8 {
+}
+#availableOptionsItem9 {
 }

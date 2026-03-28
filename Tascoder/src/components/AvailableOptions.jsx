@@ -5,45 +5,59 @@ import zes from "../assets/bunns.jpg";
 import pfpBun1 from "../assets/pfpBunn1.jpg";
 import pfpBun2 from "../assets/pfpBunn2.png";
 import pfpBun3 from "../assets/pfpBunn3.jpg";
-import icon1 from "../assets/mail.png"
-import icon2 from "../assets/desktop.png"
-import icon3 from "../assets/listTick.png"
+import icon1 from "../assets/mail.png";
+import icon2 from "../assets/desktop.png";
+import icon3 from "../assets/listTick.png";
+import { useState } from "react";
 
 export default function AvailableOptions() {
+  const [activeOptionItem, setActiveOptionItem] = useState(null);
+
+  function showMoreText() {
+    setActiveOptionItem(true);
+  }
+
+  // function toggleMoreText() {
+  //   if(activeOptionItem) {
+  //     setActiveOptionItem(false);
+  //   }
+  // }
+
   return (
     <section id="availableOptionsSection">
       <article id="availableOptionsArticle1">
         <div className="availableOptionsTextsHolder">
           <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-          <p>
+          <h2>
             Your projects (yes, even those tricky ones) will be up and running
             in a matter of minutes.
-          </p>
+          </h2>
           <ul>
-            <li>
+            <li key={1} id={activeOptionItem ? "availableOptionsItem1" : undefined} onClick={showMoreText}>
               <img src={icon1} alt="" />
               <span>Nam blandit nisi</span>
               <p>
-                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
-                placerat purus malesuada dignissim ut id turpis. Suspendisse.
+                Nam blandit nisi ut erat pretium, vitae placerat nisi hendrerit.
+                Fusce ut tortor placerat purus malesuada dignissim ut id turpis.
+                Suspendisse.
               </p>
             </li>
-            <li>
+            <li key={2} id={activeOptionItem ? "availableOptionsItem2" : undefined} onClick={showMoreText}>
               <img src={icon2} alt="" />
               <span>Cras odio ex, euismod</span>
               <p>
-                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
-                Suspendisse orci massa, condimentum sit amet varius eget,
-                interdum ut augue.
+                Cras odio ex, euismod a arcu ac, condimentum porta velit. Proin
+                quis condimentum nisl. Suspendisse orci massa, condimentum sit
+                amet varius eget, interdum ut augue.
               </p>
             </li>
-            <li>
+            <li key={3} id={activeOptionItem ? "availableOptionsItem3" : undefined} onClick={showMoreText}>
               <img src={icon3} alt="" />
               <span>Praesent vulputate consectetur</span>
               <p>
-                dictum. Proin lacinia ornare massa quis commodo. Praesent
-                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
-                aliquet molestie augue tristique.
+                Praesent vulputate consectetur dictum. Proin lacinia ornare
+                massa quis commodo. Praesent feugiat fermentum diam at laoreet.
+                Morbi finibus dui lectus, aliquet molestie augue tristique.
               </p>
             </li>
           </ul>
@@ -73,7 +87,7 @@ export default function AvailableOptions() {
             in a matter of minutes.
           </p>
           <ul>
-            <li>
+            <li key={4} id={activeOptionItem ? "availableOptionsItem4" : undefined} onClick={showMoreText}>
               <img src={icon1} alt="" />
 
               <span>Nam blandit nisi</span>
@@ -82,7 +96,7 @@ export default function AvailableOptions() {
                 placerat purus malesuada dignissim ut id turpis. Suspendisse.
               </p>
             </li>
-            <li>
+            <li key={5} id={activeOptionItem ? "availableOptionsItem5" : undefined} onClick={showMoreText}>
               <img src={icon2} alt="" />
 
               <span>Cras odio ex, euismod</span>
@@ -92,7 +106,7 @@ export default function AvailableOptions() {
                 interdum ut augue.
               </p>
             </li>
-            <li>
+            <li key={6} id={activeOptionItem ? "availableOptionsItem6" : undefined} onClick={showMoreText}>
               <img src={icon3} alt="" />
 
               <span>Praesent vulputate consectetur</span>
@@ -129,7 +143,7 @@ export default function AvailableOptions() {
             in a matter of minutes.
           </p>
           <ul>
-            <li>
+            <li key={7} id={activeOptionItem ? "availableOptionsItem7" : undefined} onClick={showMoreText}>
               <img src={icon1} alt="" />
               <span>Nam blandit nisi</span>
               <p>
@@ -137,7 +151,7 @@ export default function AvailableOptions() {
                 placerat purus malesuada dignissim ut id turpis. Suspendisse.
               </p>
             </li>
-            <li>
+            <li key={8} id={activeOptionItem ? "availableOptionsItem8" : undefined} onClick={showMoreText}>
               <img src={icon2} alt="" />
               <span>Cras odio ex, euismod</span>
               <p>
@@ -146,7 +160,7 @@ export default function AvailableOptions() {
                 interdum ut augue.
               </p>
             </li>
-            <li>
+            <li key={9} id={activeOptionItem ? "availableOptionsItem9" : undefined} onClick={showMoreText}>
               <img src={icon3} alt="" />
               <span>Praesent vulputate consectetur</span>
               <p>
