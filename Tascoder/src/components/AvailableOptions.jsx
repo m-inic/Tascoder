@@ -10,184 +10,156 @@ import icon2 from "../assets/desktop.png";
 import icon3 from "../assets/listTick.png";
 import { useState } from "react";
 
+const articles = [
+  {
+    id: "availableOptionsArticle1",
+    heading: "Lorem ipsum dolor sit amet, consectetur.",
+    subheading:
+      "Your projects (yes, even those tricky ones) will be up and running in a matter of minutes.",
+    subheadingTag: "h2",
+    image: bunn,
+    quote:
+      "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
+    profile: {
+      img: pfpBun1,
+      name: "Zus Toni",
+      role: "CEO at ZMO (Zus Mafia Organisation)",
+    },
+    items: [
+      {
+        icon: icon1,
+        title: "Nam blandit nisi",
+        text: "Nam blandit nisi ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut id turpis. Suspendisse.",
+      },
+      {
+        icon: icon2,
+        title: "Cras odio ex, euismod",
+        text: "Cras odio ex, euismod a arcu ac, condimentum porta velit. Proin quis condimentum nisl. Suspendisse orci massa, condimentum sit amet varius eget, interdum ut augue.",
+      },
+      {
+        icon: icon3,
+        title: "Praesent vulputate consectetur",
+        text: "Praesent vulputate consectetur dictum. Proin lacinia ornare massa quis commodo. Praesent feugiat fermentum diam at laoreet. Morbi finibus dui lectus, aliquet molestie augue tristique.",
+      },
+    ],
+  },
+  {
+    id: "availableOptionsArticle2",
+    heading: "Lorem ipsum dolor sit amet, consectetur.",
+    subheading:
+      "Your projects (yes, even those tricky ones) will be up and running in a matter of minutes.",
+    subheadingTag: "p",
+    image: zus,
+    quote:
+      "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
+    profile: {
+      img: pfpBun2,
+      name: "Zus Kit",
+      role: "Secretary and administrative operations, ZMO",
+    },
+    items: [
+      {
+        icon: icon1,
+        title: "Nam blandit nisi",
+        text: "Nam blandit nisi ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut id turpis. Suspendisse.",
+      },
+      {
+        icon: icon2,
+        title: "Cras odio ex, euismod",
+        text: "Cras odio ex, euismod a arcu ac, condimentum porta velit. Proin quis condimentum nisl. Suspendisse orci massa, condimentum sit amet varius eget, interdum ut augue.",
+      },
+      {
+        icon: icon3,
+        title: "Praesent vulputate consectetur",
+        text: "Praesent vulputate consectetur dictum. Proin lacinia ornare massa quis commodo. Praesent feugiat fermentum diam at laoreet. Morbi finibus dui lectus, aliquet molestie augue tristique.",
+      },
+    ],
+  },
+  {
+    id: "availableOptionsArticle3",
+    heading: "Lorem ipsum dolor sit amet, consectetur.",
+    subheading:
+      "Your projects (yes, even those tricky ones) will be up and running in a matter of minutes.",
+    subheadingTag: "p",
+    image: zes,
+    quote:
+      "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
+    profile: {
+      img: pfpBun3,
+      name: "Zus Maus",
+      role: "Delivery and transportation, ZMO",
+    },
+    items: [
+      {
+        icon: icon1,
+        title: "Nam blandit nisi",
+        text: "Nam blandit nisi ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor placerat purus malesuada dignissim ut id turpis. Suspendisse.",
+      },
+      {
+        icon: icon2,
+        title: "Cras odio ex, euismod",
+        text: "Cras odio ex, euismod a arcu ac, condimentum porta velit. Proin quis condimentum nisl. Suspendisse orci massa, condimentum sit amet varius eget, interdum ut augue.",
+      },
+      {
+        icon: icon3,
+        title: "Praesent vulputate consectetur",
+        text: "Praesent vulputate consectetur dictum. Proin lacinia ornare massa quis commodo. Praesent feugiat fermentum diam at laoreet. Morbi finibus dui lectus, aliquet molestie augue tristique.",
+      },
+    ],
+  },
+];
+
 export default function AvailableOptions() {
-  const [activeOptionItem, setActiveOptionItem] = useState(null);
+  const [activeItems, setActiveItems] = useState({});
 
-  function showMoreText() {
-    setActiveOptionItem(true);
+  function toggleItem(articleIndex, itemIndex) {
+    setActiveItems((prev) => ({
+      ...prev,
+      [articleIndex]: prev[articleIndex] === itemIndex ? null : itemIndex,
+    }));
   }
-
-  // function toggleMoreText() {
-  //   if(activeOptionItem) {
-  //     setActiveOptionItem(false);
-  //   }
-  // }
 
   return (
     <section id="availableOptionsSection">
-      <article id="availableOptionsArticle1">
-        <div className="availableOptionsTextsHolder">
-          <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-          <h2>
-            Your projects (yes, even those tricky ones) will be up and running
-            in a matter of minutes.
-          </h2>
-          <ul>
-            <li key={1} id={activeOptionItem ? "availableOptionsItem1" : undefined} onClick={showMoreText}>
-              <img src={icon1} alt="" />
-              <span>Nam blandit nisi</span>
-              <p>
-                Nam blandit nisi ut erat pretium, vitae placerat nisi hendrerit.
-                Fusce ut tortor placerat purus malesuada dignissim ut id turpis.
-                Suspendisse.
-              </p>
-            </li>
-            <li key={2} id={activeOptionItem ? "availableOptionsItem2" : undefined} onClick={showMoreText}>
-              <img src={icon2} alt="" />
-              <span>Cras odio ex, euismod</span>
-              <p>
-                Cras odio ex, euismod a arcu ac, condimentum porta velit. Proin
-                quis condimentum nisl. Suspendisse orci massa, condimentum sit
-                amet varius eget, interdum ut augue.
-              </p>
-            </li>
-            <li key={3} id={activeOptionItem ? "availableOptionsItem3" : undefined} onClick={showMoreText}>
-              <img src={icon3} alt="" />
-              <span>Praesent vulputate consectetur</span>
-              <p>
-                Praesent vulputate consectetur dictum. Proin lacinia ornare
-                massa quis commodo. Praesent feugiat fermentum diam at laoreet.
-                Morbi finibus dui lectus, aliquet molestie augue tristique.
-              </p>
-            </li>
-          </ul>
-          <q>
-            Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu
-            condimentum metus pharetra ac. Aenean auctor tellus libero, non
-            interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a
-            lacinia justo.
-          </q>
-          <div className="availableOptionsProfile">
-            <img src={pfpBun1} alt="" />
-            <div>
-              <p>Zus Toni</p>
-              <span>CEO at ZMO (Zus Mafia Organisation)</span>
+      {articles.map((article, aIdx) => {
+        return (
+          <article key={article.id} id={article.id}>
+            <div className="availableOptionsTextsHolder">
+              <h1>{article.heading}</h1>
+              <h2>{article.subheading}</h2>
+              <ul>
+                {article.items.map((item, iIdx) => {
+                  const isActive = activeItems[aIdx] === iIdx;
+                  return (
+                    <li
+                      key={iIdx}
+                      className={isActive ? "listItemExpanded" : ""}
+                      onClick={() => toggleItem(aIdx, iIdx)}
+                    >
+                      <img src={item.icon} alt="" />
+                      <div className="liTextBlock">
+                      <span>{item.title}</span>
+                      <p>{item.text}</p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+              <q>{article.quote}</q>
+              <div className="availableOptionsProfile">
+                <img src={article.profile.img} alt="" />
+                <div>
+                  <p>{article.profile.name}</p>
+                  <span>{article.profile.role}</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="availableOptionsImg">
-          <img src={bunn} alt="" />
-        </div>
-      </article>
-      <article id="availableOptionsArticle2">
-        <div className="availableOptionsTextsHolder">
-          <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-          <p>
-            Your projects (yes, even those tricky ones) will be up and running
-            in a matter of minutes.
-          </p>
-          <ul>
-            <li key={4} id={activeOptionItem ? "availableOptionsItem4" : undefined} onClick={showMoreText}>
-              <img src={icon1} alt="" />
-
-              <span>Nam blandit nisi</span>
-              <p>
-                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
-                placerat purus malesuada dignissim ut id turpis. Suspendisse.
-              </p>
-            </li>
-            <li key={5} id={activeOptionItem ? "availableOptionsItem5" : undefined} onClick={showMoreText}>
-              <img src={icon2} alt="" />
-
-              <span>Cras odio ex, euismod</span>
-              <p>
-                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
-                Suspendisse orci massa, condimentum sit amet varius eget,
-                interdum ut augue.
-              </p>
-            </li>
-            <li key={6} id={activeOptionItem ? "availableOptionsItem6" : undefined} onClick={showMoreText}>
-              <img src={icon3} alt="" />
-
-              <span>Praesent vulputate consectetur</span>
-              <p>
-                dictum. Proin lacinia ornare massa quis commodo. Praesent
-                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
-                aliquet molestie augue tristique.
-              </p>
-            </li>
-          </ul>
-          <q>
-            Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu
-            condimentum metus pharetra ac. Aenean auctor tellus libero, non
-            interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a
-            lacinia justo.
-          </q>
-          <div className="availableOptionsProfile">
-            <img src={pfpBun2} alt="" />
-            <div>
-              <p>Zus Kit</p>
-              <span>Secretary and administrative operations, ZMO</span>
+            <div className="availableOptionsImg">
+              <img src={article.image} alt="" />
             </div>
-          </div>
-        </div>
-        <div className="availableOptionsImg">
-          <img src={zus} alt="" />
-        </div>
-      </article>
-      <article id="availableOptionsArticle3">
-        <div className="availableOptionsTextsHolder">
-          <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-          <p>
-            Your projects (yes, even those tricky ones) will be up and running
-            in a matter of minutes.
-          </p>
-          <ul>
-            <li key={7} id={activeOptionItem ? "availableOptionsItem7" : undefined} onClick={showMoreText}>
-              <img src={icon1} alt="" />
-              <span>Nam blandit nisi</span>
-              <p>
-                ut erat pretium, vitae placerat nisi hendrerit. Fusce ut tortor
-                placerat purus malesuada dignissim ut id turpis. Suspendisse.
-              </p>
-            </li>
-            <li key={8} id={activeOptionItem ? "availableOptionsItem8" : undefined} onClick={showMoreText}>
-              <img src={icon2} alt="" />
-              <span>Cras odio ex, euismod</span>
-              <p>
-                a arcu ac, condimentum porta velit. Proin quis condimentum nisl.
-                Suspendisse orci massa, condimentum sit amet varius eget,
-                interdum ut augue.
-              </p>
-            </li>
-            <li key={9} id={activeOptionItem ? "availableOptionsItem9" : undefined} onClick={showMoreText}>
-              <img src={icon3} alt="" />
-              <span>Praesent vulputate consectetur</span>
-              <p>
-                dictum. Proin lacinia ornare massa quis commodo. Praesent
-                feugiat fermentum diam at laoreet. Morbi finibus dui lectus,
-                aliquet molestie augue tristique.
-              </p>
-            </li>
-          </ul>
-          <q>
-            Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu
-            condimentum metus pharetra ac. Aenean auctor tellus libero, non
-            interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a
-            lacinia justo.
-          </q>
-          <div className="availableOptionsProfile">
-            <img src={pfpBun3} alt="" />
-            <div>
-              <p>Zus Maus</p>
-              <span>Delivery and transportation, ZMO</span>
-            </div>
-          </div>
-        </div>
-        <div className="availableOptionsImg">
-          <img src={zes} alt="" />
-        </div>
-      </article>
+          </article>
+        );
+      })}
     </section>
   );
 }
