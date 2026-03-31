@@ -1,8 +1,8 @@
 #availableOptionsSection {
-  height: 170rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 180rem;
 }
 
 #availableOptionsArticle1 {
@@ -18,7 +18,11 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 900px;
+}
+
+#availableOptionsTextsHolder {
 }
 
 .availableOptionsTextsHolder h1 {
@@ -132,9 +136,7 @@
 
 #availableOptionsArticle2 .availableOptionsProfile {
   flex-direction: row-reverse;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: unset;
+  align-self: flex-end;
 }
 .availableOptionsTextsHolder #availableOptionsArticle2 h1 {
   text-align: right;
@@ -170,7 +172,12 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 21rem;
-  align-items: flex-end;
+  height: 6.5rem;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background: #ffffff80;
+  box-shadow: 0px 3px 6px 0px #0000005c;
 }
 
 .availableOptionsProfile img {
@@ -179,11 +186,11 @@
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #ffa16c;
+  margin: unset;
 }
 
 .availableOptionsProfile div {
-  width: 13rem;
-  padding: 0rem 1rem 0rem 1rem;
+  width: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -192,7 +199,7 @@
 .availableOptionsProfile p {
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 14px;
+  margin: 0;
 }
 
 .availableOptionsProfile span {

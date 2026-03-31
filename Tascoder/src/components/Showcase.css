@@ -91,7 +91,7 @@
 
 #showcaseSectionGallery {
   height: 30rem;
-  width: 90%;
+  width: 1000px;
   max-width: 1100px;
   background: linear-gradient(135deg, #6997ff, #0051ff);
   border-radius: 1rem;
@@ -102,8 +102,8 @@
 }
 
 #showcaseSectionGallery img {
-  height: 98%;
-  width: 99%;
+  height: 470px;
+  width: 990px;
   border-radius: 1rem;
   background: #499999;
   object-fit: cover;

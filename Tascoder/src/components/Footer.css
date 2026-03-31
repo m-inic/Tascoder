@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+  max-width: 1240px;
   margin: 10rem auto 0 auto;
   height: 35rem;
   align-items: center;
@@ -18,7 +19,8 @@
 }
 
 #footerSection ul li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
 }
 
 #footerSection h2 {
@@ -30,11 +32,32 @@
 #footerSection a {
   text-decoration: none;
   color: black;
+  transition: all 1s;
+  position: relative;
+}
+
+#footerSection a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: black;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+#footerSection a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #footerSection p {
   font-size: 20px;
-  width: 22rem;
+  width: 97%;
 }
 
 #footerLogo {
@@ -45,11 +68,12 @@
 
 #footerTitleHolder {
   height: 20rem;
+  width: 320px;
 }
 
 #footerListsHolder {
   height: 20rem;
-  width: 45%;
+  width: 550px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -62,9 +86,18 @@
 }
 
 .footerLists h3 {
-    margin: 0;
+  margin: 0;
 }
 
-#footerSocial {
-    position: absolute;
+#footerSection #footerSocial {
+  align-items: end;
+  width: 2rem;
+}
+
+#wavesFooter {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  bottom: -546rem;
+  transform: rotate(360deg);
 }
