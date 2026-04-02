@@ -1,10 +1,44 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import Home from "./pages/home/Home.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFound from "./pages/errors/NotFound.jsx";
+import Start from "./pages/start/Start.jsx";
+import FeaturesPage from "./pages/features/FeaturesPage.jsx";
+import Support from "./pages/support/Support.jsx";
+import DealsPage from "./pages/deals/DealsPage.jsx";
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>,
+    errorElement: <NotFound></NotFound>,
+  },
+  {
+    path: "/startNow",
+    element: <Start></Start>,
+    errorElement: <NotFound></NotFound>,
+  },
+  {
+    path: "/features",
+    element: <FeaturesPage></FeaturesPage>,
+    errorElement: <NotFound></NotFound>,
+  },
+  {
+    path: "/support",
+    element: <Support></Support>,
+    errorElement: <NotFound></NotFound>,
+  },
+  {
+    path: "/deals",
+    element: <DealsPage></DealsPage>,
+    errorElement: <NotFound></NotFound>,
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
-)
+);

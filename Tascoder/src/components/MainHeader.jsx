@@ -1,6 +1,7 @@
 import "./MainHeader.css";
 import logo from "../assets/tascoderLogo.png";
 import { useState, useEffect } from "react";
+import { Routes, Route, Link } from 'react-router-dom';
 
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
@@ -22,27 +23,33 @@ export default function MainHeader() {
   }, []);
 
   return (
-    <nav style={{background: navBg, transition: 'background-color 0.3s ease', backdropFilter: "blur(6px)"}}>
+    <nav
+      style={{
+        background: navBg,
+        transition: "background-color 0.3s ease",
+        backdropFilter: "blur(6px)",
+      }}
+    >
       <div id="logoHolder">
-        <a href="">
+        <Link to="/" href="">
           tascoder <img src={logo} alt="" />
-        </a>
+        </Link>
       </div>
       <div id="navListHolder">
         <ul>
           <li>
-            <a href="">features</a>
+            <Link to="/features">features</Link>
           </li>
           <li>
-            <a href="">deals</a>
+            <Link to="/deals">deals</Link>
           </li>
           <li>
-            <a href="">support</a>
+            <Link to="/support">support</Link>
           </li>
           <li id="lastNavEl">
-            <a href="" id="navBtn">
+            <Link to="/startNow" id="navBtn">
               start now
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
