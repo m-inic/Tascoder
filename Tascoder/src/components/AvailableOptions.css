@@ -85,7 +85,7 @@
   width: 25rem;
   height: 24px;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   font-size: 20px;
   border-radius: 10px;
@@ -95,6 +95,11 @@
   gap: 10px;
   align-items: baseline;
 }
+
+.availableOptionsTextsHolder li:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff;
+}
+
 .availableOptionsTextsHolder q {
   font-size: 20px;
 }

@@ -1,0 +1,13 @@
+.wavesNotFound {
+      top: 90vh;
+
+}
+
+#notFoundMessage {
+  height: 12rem;
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}

@@ -54,5 +54,5 @@ export default function MainHeader() {
         </ul>
       </div>
     </nav>
-  );
+  )
 }

@@ -5,7 +5,7 @@ import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedIn.png";
 import twitter from "../assets/twitter.png";
 
-export default function Footer() {
+export default function Footer({pageClassName}) {
   return (
     <section id="footerSection">
       <svg
@@ -13,6 +13,7 @@ export default function Footer() {
         viewBox="0 0 1440 256"
         fill="none"
         id="wavesFooter"
+        className={pageClassName}
       >
         <path
           d="M0 0L60 5.3C120 11 240 21 360 53.3C480 85 600 139 720 138.7C840 139 960 85 1080 74.7C1200 64 1320 96 1380 112L1440 128V256H1380C1320 256 1200 256 1080 256C960 256 840 256 720 256C600 256 480 256 360 256C240 256 120 256 60 256H0V0Z"
