@@ -40,26 +40,6 @@ export default function Footer({pageClassName}) {
       </div>
       <div id="footerListsHolder">
         <div className="footerLists">
-          <h3>Features</h3>
-          <ul>
-            <li>
-              <a href="">How it works</a>
-            </li>
-            <li>
-              <a href="">For teams</a>
-            </li>
-            <li>
-              <a href="">Pricing</a>
-            </li>
-            <li>
-              <a href="">Compare</a>
-            </li>
-            <li>
-              <a href="">Templates</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footerLists">
           <h3>Resources</h3>
           <ul>
             <li>
@@ -89,6 +69,26 @@ export default function Footer({pageClassName}) {
           </ul>
         </div>
         <div className="footerLists">
+          <h3>Features</h3>
+          <ul>
+            <li>
+              <a href="">How it works</a>
+            </li>
+            <li>
+              <a href="">For teams</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Compare</a>
+            </li>
+            <li>
+              <a href="">Templates</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footerLists">
           <h3>Company</h3>
           <ul>
             <li>
@@ -106,6 +106,10 @@ export default function Footer({pageClassName}) {
             <li>
               <a href="">Twist</a>
             </li>
+            <li>
+              <a href="">Inspitarion</a>
+            </li>
+            
           </ul>
         </div>
         <ul id="footerSocial">

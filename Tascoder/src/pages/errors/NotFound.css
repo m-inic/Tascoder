@@ -1,13 +1,47 @@
-.wavesNotFound {
-      top: 90vh;
-
+#notFoundSection {
+  height: 25rem;
+  margin: 325px 0 -400px 0;
 }
 
 #notFoundMessage {
-  height: 12rem;
-    margin-top: 120px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+#notFoundMessage code {
+  font-size: 3rem;
+}
+
+#notFoundMessage button {
+  border-radius: 1rem;
+  border: none;
+  width: 8rem;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6d9bff, #2168ff);
+
+  transition: all 0.2s;
+}
+
+#notFoundMessage button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+#notFoundMessage a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  height: 19px;
+}
+
+#notFoundMessage img {
+  height: 15px;
+  width: 15px;
+  filter: invert(1);
 }

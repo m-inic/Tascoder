@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1240px;
-  margin: 10rem auto 0 auto;
-  height: 35rem;
+  margin-top: 25rem;
+  height: 34rem;
   align-items: center;
+  position: relative;
+  padding: 0rem 7rem 0rem 7rem;
+  border-top: 1px solid #babcbf;
 }
 
 #footerSection ul {
@@ -92,12 +93,12 @@
 #footerSection #footerSocial {
   align-items: end;
   width: 2rem;
+  justify-content: center;
 }
 
 #wavesFooter {
   position: absolute;
-  width: 100vw;
-  left: 0;
-  bottom: -546rem;
+  left: -56px;
+  bottom: -115px;
   transform: rotate(360deg);
 }
