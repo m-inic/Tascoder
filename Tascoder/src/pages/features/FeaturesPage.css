@@ -1,0 +1,92 @@
+#featuresPageSection {
+  display: flex;
+  margin-top: 15rem;
+  flex-direction: column;
+  height: 1540px;
+  justify-content: space-between;
+}
+
+.featuresSectionSegment {
+  height: 40%;
+}
+
+#featuresPageTitleHolder {
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#featuresPageTitleHolder h1 {
+  text-align: center;
+  font-size: 3rem;
+  width: 49rem;
+  margin: 0;
+}
+
+#featuresPageTitleHolder h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4f4f4f;
+  color: #4f4f4f;
+  margin: -5px 0 33px 0;
+}
+
+#featuresPageImagesHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#featuresPageImagesHolder h2 {
+  font-size: 2rem;
+}
+
+#featuresPageImagesHolder ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 80%;
+  height: 20rem;
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+#featuresPageImagesHolder li {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6d9bff, #2168ff);
+    width: 14rem;
+    transition: all 0.3s;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 7px 0px #00000066;
+}
+
+#featuresPageImagesHolder li:hover {
+    filter: brightness(1.2);
+    border: 2px solid white;
+    box-shadow: 0px 4px 7px 5px #00000040;
+}
+
+#featuresPageTitleHolder a {
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 18px;
+  scale: 1.4;
+  color: black;
+}
+
+.invertFeaturesIcon {
+  filter: invert(1);
+}
+
+#featuresPageTitleHolder a:hover {
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, #2168ff, #6d9bff);
+}
