@@ -18,15 +18,15 @@ export default function FeaturesPage() {
   return (
     <>
       <section id="featuresPageSection">
-        <div id="featuresPageTitleHolder" className="featuresSectionSegment">
+        <div id="featuresPageTitleHolder">
           <h1>Stvari na koje se nasi ljudi PONOSE i koje vama olaksaju poso</h1>
           <h3>programeri vole da rade svoj poso</h3>
           <Link to="/startNow" id="navBtn">
             start now
           </Link>
         </div>
-        <div id="featuresPageImagesHolder" className="featuresSectionSegment">
-          <h2>Uvek na prvo mesto kvalitet</h2>
+        <div id="featuresPageImagesHolder">
+          <h2>Uvek na prvo mesto kvalitet, a na drugo i trece mesto stvari koje su manje bitne</h2>
           <ul>
             <li>
               <img src={best} alt="" id="invertFeaturesIcon1" />
@@ -42,7 +42,7 @@ export default function FeaturesPage() {
             </li>
           </ul>
         </div>
-        <div >
+        <div id="carouselHolder">
           <div className="featuresSectionSegment">
             <div className="featuresSectionSegmentGroup">
               <img src={bnnuy} alt="" className="featuresSectionSegmentCard" />

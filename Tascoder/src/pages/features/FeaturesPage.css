@@ -1,16 +1,17 @@
 #featuresPageSection {
   display: flex;
-  margin-top: 15rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
   flex-direction: column;
-  height: 1540px;
+  height: 1460px;
   justify-content: space-between;
 }
 
 #featuresPageTitleHolder {
-  height: 19rem;
+  height: 16rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -33,13 +34,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 30rem;
 }
 
 #featuresPageImagesHolder h2 {
   font-size: 2rem;
   font-weight: 400;
-  margin: 200px 0 24px 0px;
+  margin: 0 0 24px 0px;
+  width: 35rem;
+  text-align: center;
 }
 
 #featuresPageImagesHolder ul {
@@ -105,8 +109,8 @@
 
 .sectionFeaturePage {
   width: 90%;
-    margin: auto;
-    overflow-x: auto;
+  margin: auto;
+  overflow-x: auto;
 }
 
 .featuresSectionSegment {
@@ -126,7 +130,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  animation: scroll 5s infinite linear;
+  animation: scroll 20s infinite linear;
   padding-right: 2rem;
   position: relative;
   left: 100%;
@@ -139,6 +143,12 @@
   padding: 2rem;
   object-fit: cover;
   align-content: center;
+  border-radius: 3rem;
+  transition: all 0.3s;
+}
+
+.featuresSectionSegmentCard:hover {
+  scale: 1.1;
 }
 
 @keyframes scroll {
@@ -148,4 +158,29 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+#carouselHolder {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.featuresSectionSegment::after {
+      content: "";
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(270deg, #e0eaff, #e0eaff00);
+    right: 0;
+}
+
+.featuresSectionSegment::before {
+      content: "";
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(90deg, #e0eaff, #e0eaff00);
+    left: 0;
+    z-index: 1;
 }
