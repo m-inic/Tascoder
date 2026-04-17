@@ -26,7 +26,6 @@ export default function FeaturesPage() {
           </Link>
         </div>
         <div id="featuresPageImagesHolder">
-          <h2>Uvek na prvo mesto kvalitet, a na drugo i trece mesto stvari koje su manje bitne</h2>
           <ul>
             <li>
               <img src={best} alt="" id="invertFeaturesIcon1" />
@@ -43,24 +42,90 @@ export default function FeaturesPage() {
           </ul>
         </div>
         <div id="carouselHolder">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 256"
+            fill="none"
+            id="wavesFooter"
+            className="wavesFeaturesPage1"
+          >
+            <path
+              d="M0 0L60 5.3C120 11 240 21 360 53.3C480 85 600 139 720 138.7C840 139 960 85 1080 74.7C1200 64 1320 96 1380 112L1440 128V256H1380C1320 256 1200 256 1080 256C960 256 840 256 720 256C600 256 480 256 360 256C240 256 120 256 60 256H0V0Z"
+              fill="url(#paint0_linear_645_10)"
+            ></path>
+            <defs>
+              <linearGradient
+                id="paint0_linear_645_10"
+                x1="720"
+                y1="256"
+                x2="720"
+                y2="-7.39108e-06"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0099FF" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#2168FF"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
           <div className="featuresSectionSegment">
             <div className="featuresSectionSegmentGroup">
               <img src={bnnuy} alt="" className="featuresSectionSegmentCard" />
-              <img src={ferrari} alt="" className="featuresSectionSegmentCard" />
+              <img
+                src={ferrari}
+                alt=""
+                className="featuresSectionSegmentCard"
+              />
               <img src={bunny} alt="" className="featuresSectionSegmentCard" />
-              <img src={sportage} alt="" className="featuresSectionSegmentCard" />
+              <img
+                src={sportage}
+                alt=""
+                className="featuresSectionSegmentCard"
+              />
               <img src={bunns} alt="" className="featuresSectionSegmentCard" />
               <img src={nsx} alt="" className="featuresSectionSegmentCard" />
             </div>
             <div className="featuresSectionSegmentGroup">
               <img src={bnnuy} alt="" className="featuresSectionSegmentCard" />
-              <img src={ferrari} alt="" className="featuresSectionSegmentCard" />
+              <img
+                src={ferrari}
+                alt=""
+                className="featuresSectionSegmentCard"
+              />
               <img src={bunny} alt="" className="featuresSectionSegmentCard" />
-              <img src={sportage} alt="" className="featuresSectionSegmentCard" />
+              <img
+                src={sportage}
+                alt=""
+                className="featuresSectionSegmentCard"
+              />
               <img src={bunns} alt="" className="featuresSectionSegmentCard" />
               <img src={nsx} alt="" className="featuresSectionSegmentCard" />
             </div>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 256"
+            fill="none"
+            id="wavesFooter"
+            className="wavesFeaturesPage2"
+          >
+            <path
+              d="M0 0L60 5.3C120 11 240 21 360 53.3C480 85 600 139 720 138.7C840 139 960 85 1080 74.7C1200 64 1320 96 1380 112L1440 128V256H1380C1320 256 1200 256 1080 256C960 256 840 256 720 256C600 256 480 256 360 256C240 256 120 256 60 256H0V0Z"
+              fill="url(#paint0_linear_645_10)"
+            ></path>
+            <defs>
+              <linearGradient
+                id="paint0_linear_645_10"
+                x1="720"
+                y1="256"
+                x2="720"
+                y2="-7.39108e-06"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0099FF" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#2168FF"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </section>
       <MainHeader />

@@ -1,9 +1,9 @@
 #featuresPageSection {
   display: flex;
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-bottom: 20rem;
   flex-direction: column;
-  height: 1460px;
+  height: 1540px;
   justify-content: space-between;
 }
 
@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 30rem;
+  height: 440px;
 }
 
 #featuresPageImagesHolder h2 {
@@ -62,11 +62,16 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #6d9bff, #2168ff);
-  width: 14rem;
+  width: 9rem;
   transition: all 0.3s;
   border-radius: 1rem;
   border: 2px solid rgba(255, 255, 255, 0);
   box-shadow: 0px 4px 7px 0px #00000066;
+  padding: 2rem;
+}
+
+#featuresPageImagesHolder li p {
+  text-align: center;
 }
 
 #featuresPageImagesHolder li:hover {
@@ -119,6 +124,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  max-width: 1200px;
 }
 
 .sectionFeaturePage::-webkit-scrollbar {
@@ -164,23 +170,44 @@
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
+  height: 30rem;
+  display: flex;
 }
 
 .featuresSectionSegment::after {
-      content: "";
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: linear-gradient(270deg, #e0eaff, #e0eaff00);
-    right: 0;
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(270deg, #e0eaff, #e0eaff00);
+  right: 0;
 }
 
 .featuresSectionSegment::before {
-      content: "";
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(90deg, #e0eaff, #e0eaff00);
+  left: 0;
+  z-index: 1;
+}
+
+#carouselHolder .wavesFeaturesPage1 {
+  width: 100%;
+    height: auto;
     position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: linear-gradient(90deg, #e0eaff, #e0eaff00);
+    top: 65.5rem;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+}
+
+#carouselHolder .wavesFeaturesPage2 {
+      width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -70rem;
+    left: 0;
+    transform: rotate(180deg);
+    z-index: 2;
 }
