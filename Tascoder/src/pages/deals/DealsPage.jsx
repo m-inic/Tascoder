@@ -229,6 +229,11 @@ export default function DealsPage() {
             </table>
           </div>
         </div>
+        <div id="dealsPageStartNow">
+          <h2>Join 30 million+ people who rely on Todoist to manage work and life</h2>
+          <p>Plus tens of thousands of teams from companies of all sizes.</p>
+          <Link>start now</Link>
+        </div>
       </section>
       <Footer />
     </>

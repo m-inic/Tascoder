@@ -4,11 +4,12 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #tableHolder {
   width: 90%;
-  height: 100%;
+  height: 85%;
   max-width: 1400px;
   border: 2px solid #878787;
   border-radius: 1rem;
@@ -36,7 +37,11 @@
 }
 
 #dealsComparisonHolder {
-  height: 100%;
+  height: 1435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #dealsNamesHolder {
@@ -76,24 +81,74 @@
 
 .tablesDealsPage {
   width: 90%;
-  margin: auto;
+  margin: 4rem auto;
   height: fit-content;
+  border-collapse: collapse;
 }
 
 .tablesDealsPage caption {
+  text-align: start;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
 }
 
 .tablesDealsPage tbody {
+  border-collapse: collapse;
 }
 
 .tablesDealsPage tr {
+  border-bottom: 1px solid black;
+  background: linear-gradient(135deg, #6d9bff31, #2167ff31);
+  transition: all 0.3s;
+  display: block;
+  padding-left: 16px;
+}
+
+.tablesDealsPage tr:hover {
+  background: linear-gradient(135deg, #6d9bff, #2167ff);
 }
 
 .tablesDealsPage th {
+  text-align: start;
+  width: 284px;
 }
 
 .tablesDealsPage td {
+  width: 25%;
 }
 
-.tablesDealsPage p {
+#dealsPageStartNow {
+  margin: 100px 0 -350px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dealsPageStartNow h2 {
+  font-size: 42px;
+  width: 42rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#dealsPageStartNow p {
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+#dealsPageStartNow a {
+  background: linear-gradient(135deg, #ffa46d, #ff5f50);
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-family: Outfit;
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+#dealsPageStartNow a:hover {
+  scale: 1.1;
 }
