@@ -46,10 +46,13 @@
 
 #dealsNamesHolder {
   display: flex;
-  width: 90%;
-  margin: auto;
-  padding: 1rem 0rem 2rem 0rem;
-  border-bottom: 1px solid #878787;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0rem 2rem 0rem;
+    border-bottom: 1px solid #878787;
+    position: sticky;
+    top: 69px;
+    background: #e0eaff;
 }
 
 .dealsNames {
