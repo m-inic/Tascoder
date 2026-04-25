@@ -13,12 +13,17 @@
   z-index: 1;
   font-size: 12rem;
   text-align: center;
-  color: #2a2a2a;
+  color: #000000;
+}
+
+#availableOptionsTitleHolder span {
+  color: #2c6dfa;
 }
 
 #availableOptionsTitleHolder img {
   position: absolute;
-    filter: drop-shadow(0px 0px 2px black) hue-rotate(181deg) blur(1px) brightness(1.2);
-    width: 44rem;
-    top: 48px;
+  filter: drop-shadow(0px 0px 2px black) hue-rotate(181deg) blur(3px)
+    brightness(1.2);
+  width: 44rem;
+  top: 48px;
 }
