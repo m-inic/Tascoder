@@ -1,0 +1,23 @@
+#startNowSection {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#startNowTitleHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+#startNowTitleHolder h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#startNowTitleHolder img {
+  width: 2rem;
+}
