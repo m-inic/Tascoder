@@ -9,7 +9,7 @@ export default function Support() {
     <>
       <MainHeader />
       <div id="availableOptionsTitleHolder">
-        <h2>SU<span>PPO</span>RT</h2>
+        <h2>SUPPORT</h2>
         <img src={typewriter} alt="" />
       </div>
       <AvailableOptions></AvailableOptions>

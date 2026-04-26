@@ -1,23 +1,136 @@
 #startNowSection {
+  margin-top: 68px;
+  margin-bottom: -25rem;
   height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#startNowTitleHolder {
+#startNowLeftside {
+  height: 100%;
+  background: linear-gradient(180deg, #256bff, #cfdfff);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  width: 80%;
-  margin: auto;
+  align-items: center;
+  width: 50%;
+  transform: skewX(25deg);
+  z-index: -1;
+  position: relative;
+  left: -12rem;
 }
 
-#startNowTitleHolder h2 {
+#startNowDescriptionHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 22rem;
+  transform: skewX(335deg);
+  width: 37rem;
+  position: relative;
+  left: 15%;
+}
+
+#startNowDescriptionHolder h3 {
   font-size: 2rem;
-  font-weight: 500;
 }
 
-#startNowTitleHolder img {
-  width: 2rem;
+#startNowDescriptionHolder p {
+  font-size: 22px;
+  width: 60%;
+}
+
+#startNowSection form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+#startNowFillOut {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 35rem;
+  height: 10rem;
+}
+
+#startNowSection form h2 {
+  font-size: 32px;
+}
+
+#startNowFillOut input {
+  width: 10rem;
+  height: 26px;
+  border-radius: 10px;
+  border: 1px solid #babcbf;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+#startNowFillOut input:focus-visible {
+  outline: 1px solid #246aff;
+}
+
+#startNowFillOut label {
+  width: 5rem;
+}
+
+#startNowTerms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 11rem;
+  width: 12rem;
+}
+
+#startNowAccept {
+  display: flex;
+  width: 237px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 6rem;
+  margin: 16px 0 0 -183px;
+}
+
+#startNowAccept input {
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #babcbf;
+}
+
+#startNowAccept p {
+  margin: 0;
+}
+
+#startNowRegisterBtn {
+  background: linear-gradient(135deg, #6d9bff, #2168ff);
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 18px;
+  color: black;
+}
+
+#startNowRegisterBtn:hover {
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, #2168ff, #6d9bff);
+}
+
+#startNowLoginOption {
+  margin-left: -183px;
+}
+
+.startNowLoginLink {
+  color: #2168ff;
 }
