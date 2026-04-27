@@ -1,9 +1,20 @@
 import "./Start.css";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export default function Start() {
+  const navigate = useNavigate();
+
+  function handleRegister(e) {
+    e.preventDefault();
+    navigate("/");
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+  
   return (
     <>
       <MainHeader />
@@ -19,7 +30,7 @@ export default function Start() {
             </p>
           </div>
         </div>
-        <form>
+        <form method="POST" onSubmit={handleRegister}>
           <h2>sign up</h2>
           <div id="startNowFillOut">
             <label htmlFor="startFname">First name</label>
@@ -28,6 +39,7 @@ export default function Start() {
               id="startFname"
               name="Fname"
               autoComplete="given-name"
+              required
             />
             <label htmlFor="startLname">Last name</label>
             <input
@@ -35,21 +47,43 @@ export default function Start() {
               id="startLname"
               name="Lname"
               autoComplete="family-name"
+              required
             />
             <label htmlFor="startPassw">Password</label>
-            <input type="text" id="startPassw" name="Passw" />
+            <input type="text" id="startPassw" name="Passw" required />
             <label htmlFor="startPhone">Phone</label>
-            <input type="tel" id="startPhone" name="Phone" autoComplete="tel" />
+            <input
+              type="tel"
+              id="startPhone"
+              name="Phone"
+              autoComplete="tel"
+              required
+            />
           </div>
           <div id="startNowTerms">
             <div id="startNowAccept">
-              <input type="checkbox"></input>
-              <p>Agree to <Link to="terms" className="startNowLoginLink">terms</Link> and <Link to="conditions" className="startNowLoginLink">conditions</Link></p>
-              <a href="#" id="startNowRegisterBtn">Register</a>
+              <input type="checkbox" required></input>
+              <p>
+                Agree to{" "}
+                <Link to="terms" className="startNowLoginLink">
+                  terms
+                </Link>{" "}
+                and{" "}
+                <Link to="conditions" className="startNowLoginLink">
+                  conditions
+                </Link>
+              </p>
+              <button id="startNowRegisterBtn" type="submit">
+                Register
+              </button>
             </div>
             <div id="startNowLoginOption">
-              <p>Already have an account? <Link to="login" className="startNowLoginLink">Login</Link></p>
-              
+              <p>
+                Already have an account?{" "}
+                <Link to="login" className="startNowLoginLink" onClick={scrollToTop}>
+                  Login
+                </Link>
+              </p>
             </div>
           </div>
         </form>

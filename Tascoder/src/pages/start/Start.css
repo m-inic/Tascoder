@@ -116,9 +116,11 @@
   padding: 6px 12px 6px 12px;
   border-radius: 8px;
   text-decoration: none;
-  transition: all 0.5s;
+  font-family: "Outfit";
   font-size: 18px;
   color: black;
+  border: none;
+  transition: all 0.5s;
 }
 
 #startNowRegisterBtn:hover {

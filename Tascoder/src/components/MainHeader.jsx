@@ -22,6 +22,10 @@ export default function MainHeader() {
     };
   }, []);
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <nav
       style={{
@@ -31,23 +35,23 @@ export default function MainHeader() {
       }}
     >
       <div id="logoHolder">
-        <Link to="/" href="">
+        <Link to="/" href="" onClick={scrollToTop}>
           tascoder <img src={logo} alt="" />
         </Link>
       </div>
       <div id="navListHolder">
         <ul>
           <li>
-            <Link to="/features">features</Link>
+            <Link to="/features" onClick={scrollToTop}>features</Link>
           </li>
           <li>
-            <Link to="/deals">deals</Link>
+            <Link to="/deals" onClick={scrollToTop}>deals</Link>
           </li>
           <li>
-            <Link to="/support">support</Link>
+            <Link to="/support" onClick={scrollToTop}>support</Link>
           </li>
           <li id="lastNavEl">
-            <Link to="/startNow" id="navBtn">
+            <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
               start now
             </Link>
           </li>

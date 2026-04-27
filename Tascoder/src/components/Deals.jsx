@@ -1,4 +1,5 @@
 import "./Deals.css";
+import { Link } from "react-router";
 
 export default function Deals() {
   const dealsList = [
@@ -53,6 +54,10 @@ export default function Deals() {
     },
   ];
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   const dealsCards = dealsList.map((deal) => (
     <li key={deal.id} className="dealsListItem">
       <img src={deal.image} alt="" />
@@ -64,7 +69,14 @@ export default function Deals() {
         <p className="dealsPrice">{deal.price}</p>
         <div className="dealsPriceBtnHolder">
           <div className="dealsPriceBtnBg"></div>
-          <button className="dealsPriceBtn">Start now</button>
+          <Link
+          to={"/startNow"}
+            className="dealsPriceBtn"
+            onClick={scrollToTop}
+            formAction="startNow"
+          >
+            Start now
+          </Link>
         </div>
       </div>
       <ul className="dealsFeaturesList">
@@ -81,7 +93,10 @@ export default function Deals() {
     <section id="dealsSection">
       <div id="dealsSectionTitles">
         <h1>Za svakog postoji odgovarajuci plan</h1>
-        <h2>Kreni sa besplatnim, zavrsi za najboljim. Koristi <span>Tascoder</span> i ucini posao laksim.</h2>
+        <h2>
+          Kreni sa besplatnim, zavrsi za najboljim. Koristi{" "}
+          <span>Tascoder</span> i ucini posao laksim.
+        </h2>
       </div>
       <ul id="dealsList">{dealsCards}</ul>
     </section>
