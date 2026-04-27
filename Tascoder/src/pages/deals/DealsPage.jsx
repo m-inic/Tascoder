@@ -7,6 +7,9 @@ import "../../components/Deals.css";
 import { Link } from "react-router";
 
 export default function DealsPage() {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   return (
     <>
       <MainHeader />
@@ -232,7 +235,7 @@ export default function DealsPage() {
         <div id="dealsPageStartNow">
           <h2>Join 30 million+ people who rely on Todoist to manage work and life</h2>
           <p>Plus tens of thousands of teams from companies of all sizes.</p>
-          <Link>start now</Link>
+          <Link to={"/startNow"} onClick={scrollToTop}>start now</Link>
         </div>
       </section>
       <Footer />
