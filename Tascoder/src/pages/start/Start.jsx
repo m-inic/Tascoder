@@ -8,7 +8,7 @@ export default function Start() {
 
   function handleRegister(e) {
     e.preventDefault();
-    navigate("/");
+    navigate("/tascoderApp");
   }
 
   function scrollToTop() {
