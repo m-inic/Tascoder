@@ -50,7 +50,9 @@ export default function TascoderApp() {
                   <path d="M12.6953 26.2109L35.3917 4.44835" stroke="black" />
                 </svg>
               </div>
-              <a href="" className="tscAppSideLinks">Tasks</a>
+              <a href="" className="tscAppSideLinks">
+                Tasks
+              </a>
             </li>
             <li>
               <div>
@@ -68,7 +70,9 @@ export default function TascoderApp() {
                   />
                 </svg>
               </div>
-              <a href="" className="tscAppSideLinks">Important</a>
+              <a href="" className="tscAppSideLinks">
+                Important
+              </a>
             </li>
             <li>
               <div>
@@ -87,15 +91,44 @@ export default function TascoderApp() {
                   />
                 </svg>
               </div>
-              <a href="" className="tscAppSideLinks">Finished</a>
+              <a href="" className="tscAppSideLinks">
+                Finished
+              </a>
             </li>
           </menu>
-          <ul>
+          <ul id="tscSettingsHolder">
             <li>
-              <button>{"<"}arrow</button>
+              <button className="tscSettingsBtns">
+                <div id="tscBallHolder">
+                  <div id="tscBall">
+                  </div>
+                </div>
+              </button>
             </li>
             <li>
-              <button>color mode</button>
+              <button className="tscSettingsBtns">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_691_30)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.93868 13.0609C7.65778 12.7796 7.5 12.3984 7.5 12.0009C7.5 11.6034 7.65778 11.2221 7.93868 10.9409L13.5947 5.28288C13.8761 5.00161 14.2577 4.84366 14.6555 4.84375C14.8525 4.8438 15.0476 4.88264 15.2296 4.95808C15.4116 5.03351 15.5769 5.14404 15.7162 5.28338C15.8554 5.42271 15.9659 5.58811 16.0413 5.77013C16.1166 5.95215 16.1554 6.14723 16.1553 6.34423C16.1553 6.54123 16.1164 6.73629 16.041 6.91828C15.9655 7.10026 15.855 7.26561 15.7157 7.40488L11.1207 12.0009L15.7167 16.5969C15.86 16.7352 15.9744 16.9006 16.0531 17.0836C16.1318 17.2666 16.1732 17.4634 16.1751 17.6626C16.1769 17.8617 16.139 18.0593 16.0637 18.2436C15.9883 18.428 15.877 18.5955 15.7363 18.7365C15.5955 18.8774 15.4281 18.9888 15.2438 19.0643C15.0595 19.1398 14.862 19.1779 14.6628 19.1762C14.4636 19.1746 14.2668 19.1333 14.0837 19.0548C13.9007 18.9763 13.7351 18.8621 13.5967 18.7189L7.93668 13.0609H7.93868Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_691_30">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
