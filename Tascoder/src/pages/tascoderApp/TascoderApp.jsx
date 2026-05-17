@@ -12,7 +12,6 @@ export default function TascoderApp() {
     tscHideBtn.style.transform = `rotate(${newRotation}deg)`;
     tscHideBtn.dataset.rotation = newRotation;
 
-
     const isSidebarOpen = tscSidebar.dataset.open === "true";
 
     tscSidebar.style.left = isSidebarOpen ? "-310px" : "66px";
@@ -160,6 +159,33 @@ export default function TascoderApp() {
         </div>
         <div id="tscAppLayout">
           <h2>Dashboard</h2>
+          <form action="" id="tscForm">
+            <div id="tscNewTaskHolder">
+              <label htmlFor="tscNewTask">New task</label>
+              <textarea id="tscNewTask" res></textarea>
+            </div>
+            <div id="tscDIRholder">
+              <div id="tscDIRholderFirstDate">
+                <label htmlFor="tscTaskDate" id="tscDateLabel">
+                  date
+                </label>
+                <input type="date" id="tscTaskDate" />
+              </div>
+              <div>
+                <label htmlFor="tscImportantBtn" id="tscImportantLabel">
+                  important
+                </label>
+                <input type="checkbox" id="tscImportantBtn" />
+              </div>
+              <div>
+                <label htmlFor="tscReminder" id="tscReminderLabel">
+                  reminder
+                </label>
+                <input type="date" id="tscReminder" />
+              </div>
+            </div>
+            <button disabled id="tscSubmitBtn">+</button>
+          </form>
         </div>
       </section>
       <Footer></Footer>
