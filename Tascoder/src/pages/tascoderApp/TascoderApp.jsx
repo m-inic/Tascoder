@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
 import "./TascoderApp.css";
+import dateIcon from "../../assets/dateIcon.png"
 
 export default function TascoderApp() {
   function tscHideBtnHandler() {
@@ -170,14 +171,15 @@ export default function TascoderApp() {
                   date
                 </label>
                 <input type="date" id="tscTaskDate" />
+                <img src={dateIcon} alt="" />
               </div>
-              <div>
+              <div id="tscDIRholderImportant">
                 <label htmlFor="tscImportantBtn" id="tscImportantLabel">
                   important
                 </label>
                 <input type="checkbox" id="tscImportantBtn" />
               </div>
-              <div>
+              <div id="tscDIRholderReminder">
                 <label htmlFor="tscReminder" id="tscReminderLabel">
                   reminder
                 </label>
