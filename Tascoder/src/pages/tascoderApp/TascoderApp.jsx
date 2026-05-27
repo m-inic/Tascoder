@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
 import "./TascoderApp.css";
-import dateIcon from "../../assets/dateIcon.png"
+import dateIcon from "../../assets/dateIcon.png";
 
 export default function TascoderApp() {
   function tscHideBtnHandler() {
@@ -163,7 +163,7 @@ export default function TascoderApp() {
           <form action="" id="tscForm">
             <div id="tscNewTaskHolder">
               <label htmlFor="tscNewTask">New task</label>
-              <textarea id="tscNewTask" res></textarea>
+              <textarea id="tscNewTask" res maxLength="250"></textarea>
             </div>
             <div id="tscDIRholder">
               <div id="tscDIRholderFirstDate">
@@ -171,23 +171,53 @@ export default function TascoderApp() {
                   date
                 </label>
                 <input type="date" id="tscTaskDate" />
-                <img src={dateIcon} alt="" />
-              </div>
-              <div id="tscDIRholderImportant">
-                <label htmlFor="tscImportantBtn" id="tscImportantLabel">
-                  important
-                </label>
-                <input type="checkbox" id="tscImportantBtn" />
+                <img
+                  src={dateIcon}
+                  alt=""
+                  className="tscDIRholderFirstDateImg"
+                />
               </div>
               <div id="tscDIRholderReminder">
                 <label htmlFor="tscReminder" id="tscReminderLabel">
                   reminder
                 </label>
                 <input type="date" id="tscReminder" />
+                <img
+                  src={dateIcon}
+                  alt=""
+                  className="tscDIRholderFirstDateImg"
+                />
               </div>
+              <div id="tscDIRholderImportant">
+                <label htmlFor="tscImportantBtn" id="tscImportantLabel">
+                  important
+                </label>
+                <input type="checkbox" id="tscImportantBtn" />
+              </div>        
             </div>
-            <button disabled id="tscSubmitBtn">+</button>
+            <button disabled id="tscSubmitBtn">
+              +
+            </button>
           </form>
+          <div id="tscTaskElementListHolder">
+            <ul>
+              <li>
+                <p id="tscTaskDescriptionText">8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8p</p>
+                <div id="tscDateTscDeleteHolder">
+                  <div id="tscDateReminderHolder">
+                  <p><strong>Created:</strong> 27.05.2026.</p>
+                  <span>|</span>
+                  <p><strong>Due:</strong> 28.05.2026.</p>
+                </div>
+                <div id="tscDeleteFinishBtnHolder">
+                  <button>delete</button>
+                  <button>finish</button>
+                </div>
+                </div>
+                
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <Footer></Footer>
