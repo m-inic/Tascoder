@@ -1,0 +1,388 @@
+body {
+  font-family: "Outfit";
+  height: 100%;
+  margin: 0;
+  background-color: #0f1728;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+body #logoHolder a {
+  color: #f2f2f2;
+}
+
+body #logoHolder a:hover {
+  color: white;
+}
+
+body #navListHolder a {
+  color: #f2f2f2;
+}
+
+body #navListHolder a:hover {
+  color: white;
+}
+
+body #footerSection a {
+  color: white;
+}
+
+#navListHolder #navBtn:hover {
+  color: white;
+}
+
+nav {
+  border-bottom: 1px solid #ffffff;
+}
+
+#tscAppSection {
+  margin-top: 68px;
+  margin-bottom: -400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+#tscLeftsideHolder {
+  width: 302px;
+  height: 100%;
+  position: relative;
+}
+
+#tscAppSidebar {
+  display: flex;
+  height: 830px;
+  width: 236px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 21px 0px;
+  background: #0f1728;
+  border-right: 1px solid #ffffff;
+  position: relative;
+  left: 64px;
+  transition: all 0.3s;
+}
+
+#tscAppSidebar menu {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#tscAppSidebar menu li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #0f1728;
+  transition: all 0.2s;
+}
+
+#tscAppSidebar menu li:hover {
+  background: #8bafff;
+}
+
+#tscAppSidebar menu li svg {
+  transition: all 0.1s;
+  filter: invert(1);
+}
+
+.tscAppSideLinks {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: white;
+}
+
+#tscAppSidebar menu li:hover .tscAppSideLinks {
+  background: transparent;
+}
+
+#tscAppSidebar menu div {
+  width: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+#tscSettingsHolder {
+  list-style: none;
+  position: absolute;
+  padding: 0px 8px 0px 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: linear-gradient(270deg, #8cb0ff, #4a83ff);
+  top: 0;
+  border-right: 1px solid white;
+}
+
+#tscSettingsHolder li {
+  margin: 0px 0 42px 0;
+}
+
+#tscBallHolder {
+  width: 30px;
+  height: 18px;
+  border-radius: 11px;
+  border: 2px solid #000000;
+  position: relative;
+}
+
+.tscBall {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: #000000;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: all 0.2s;
+}
+
+.tscBallLeft {
+  left: 14px;
+}
+
+.tscSettingsBtns {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  background: #e0eaff;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  rotate: 0deg;
+}
+
+.tscSettingsBtns:hover {
+  cursor: pointer;
+  background: #a8afbfbf;
+  scale: 1.05;
+}
+
+#tscAppLayout {
+  width: 100%;
+  margin-left: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tscForm {
+  display: grid;
+  width: 95%;
+  height: 150px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #767676;
+  margin-bottom: 2rem;
+}
+
+#tscNewTaskHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+#tscNewTask {
+  resize: none;
+  font-family: "Outfit";
+  height: 60px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#tscDIRholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 100%;
+}
+
+#tscDIRholderFirstDate {
+  position: relative;
+  width: 57px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tscDIRholderFirstDateImg {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  top: 2px;
+  filter: invert(1);
+}
+
+#tscDIRholderImportant {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#tscDIRholderReminder {
+  width: fit-content;
+  display: flex;
+  position: relative;
+}
+
+#tscTaskDate {
+  position: absolute;
+  height: 16px;
+  opacity: 0;
+  width: 17px;
+  z-index: 2;
+  right: -3px;
+  top: 0px;
+}
+
+#tscTaskDate::before {
+  content: "";
+  position: absolute;
+  background-image: url(/src/assets/dateIcon.png?t=1779180811085);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  pointer-events: none;
+  width: 21px;
+  height: 21px;
+}
+
+#tscDateLabel {
+  display: inline-block;
+  width: fit-content;
+}
+
+#tscImportantBtn {
+  margin: 3px 6px 0px 6px;
+}
+
+#tscImportantLabel {
+  display: inline-block;
+  width: fit-content;
+}
+
+#tscReminderLabel {
+  display: inline-block;
+  width: fit-content;
+}
+
+#tscReminder {
+  position: relative;
+  height: 16px;
+  opacity: 0;
+  width: 17px;
+  z-index: 2;
+  right: -3px;
+  top: -1px;
+}
+
+#tscDIRholderReminder .tscDIRholderFirstDateImg {
+  position: absolute;
+  right: -1px;
+}
+
+#tscSubmitBtn {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  width: 52px;
+  height: 26px;
+  justify-self: end;
+  align-self: center;
+}
+
+#tscTaskElementListHolder {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+#tscTaskElementListHolder ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#tscTaskElementListHolder li {
+  background: linear-gradient(160deg, #89afff, #3676ff);
+  border-radius: 1rem;
+  border: 1px solid #a8afbf;
+  box-shadow: 0px 1px 4px 1px #00000052;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 1rem 1rem;
+  height: fit-content;
+  justify-content: space-between;
+  color: black;
+}
+
+#tscDateTscDeleteHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#tscDateReminderHolder {
+  display: flex;
+  width: 19rem;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: flex-end;
+}
+
+#tscDeleteFinishBtnHolder {
+  height: 32px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#tscDeleteFinishBtnHolder button {
+  width: 54px;
+  height: 24px;
+  border: 1px solid #000000;
+  background: #e0eaff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Outfit";
+}
+
+#tscTaskDescriptionText {
+  margin: 14px 0 0 0;
+}
+
+#tscDateReminderHolder p {
+  margin: 0;
+}

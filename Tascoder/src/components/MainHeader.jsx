@@ -8,7 +8,7 @@ export default function MainHeader() {
 
   const listenScrollEvent = () => {
     if (scrollY > 100) {
-      setNavBg("rgb(255 255 255 / 80%)");
+      setNavBg("unset");
     } else {
       setNavBg("none");
     }
@@ -31,7 +31,7 @@ export default function MainHeader() {
       style={{
         background: navBg,
         transition: "background-color 0.3s ease",
-        backdropFilter: "blur(6px)",
+        backdropFilter: "blur(20px)",
       }}
     >
       <div id="logoHolder">

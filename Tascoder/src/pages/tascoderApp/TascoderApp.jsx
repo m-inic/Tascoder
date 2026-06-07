@@ -1,9 +1,13 @@
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
-import "./TascoderApp.css";
+import "./public/themes/light.css";
 import dateIcon from "../../assets/dateIcon.png";
+import { useState, useEffect } from "react";
 
 export default function TascoderApp() {
+  const [theme, setTheme] = useState("light");
+  const [clicked, setClicked] = useState(false);
+
   function tscHideBtnHandler() {
     const tscHideBtn = document.getElementById("tscHideBtn");
     const tscSidebar = document.getElementById("tscAppSidebar");
@@ -15,10 +19,27 @@ export default function TascoderApp() {
 
     const isSidebarOpen = tscSidebar.dataset.open === "true";
 
-    tscSidebar.style.left = isSidebarOpen ? "-310px" : "66px";
+    tscSidebar.style.left = isSidebarOpen ? "-310px" : "64px";
     tscSidebar.dataset.open = !isSidebarOpen;
     tscLeftHolder.style.width = isSidebarOpen ? "66px" : "302px";
     tscLeftHolder.dataset.open = !isSidebarOpen;
+  }
+
+  useEffect(() => {
+    let linkElement = document.getElementById("dynamic-theme-link");
+    if (!linkElement) {
+      linkElement = document.createElement("link");
+      linkElement.id = "dynamic-theme-link";
+      linkElement.rel = "stylesheet";
+      linkElement.type = "text/css";
+      document.head.appendChild(linkElement);
+    }
+    linkElement.href = `/themes/${theme}.css`;
+  }, [theme]);
+
+  function handleThemeToggle() {
+    setClicked((prev) => !prev);
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   }
 
   return (
@@ -121,9 +142,15 @@ export default function TascoderApp() {
           </div>
           <ul id="tscSettingsHolder">
             <li>
-              <button className="tscSettingsBtns">
+              <button
+                className="tscSettingsBtns"
+                id="tscBallBtn"
+                onClick={handleThemeToggle}
+              >
                 <div id="tscBallHolder">
-                  <div id="tscBall"></div>
+                  <div
+                    className={`tscBall ${clicked ? "tscBallLeft" : ""}`}
+                  ></div>
                 </div>
               </button>
             </li>
@@ -193,7 +220,7 @@ export default function TascoderApp() {
                   important
                 </label>
                 <input type="checkbox" id="tscImportantBtn" />
-              </div>        
+              </div>
             </div>
             <button disabled id="tscSubmitBtn">
               +
@@ -202,19 +229,28 @@ export default function TascoderApp() {
           <div id="tscTaskElementListHolder">
             <ul>
               <li>
-                <p id="tscTaskDescriptionText">8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8p</p>
+                <p id="tscTaskDescriptionText">
+                  8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px
+                  8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px
+                  8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px
+                  8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px 8px8px 8px 8px
+                  8px8px 8px 8p
+                </p>
                 <div id="tscDateTscDeleteHolder">
                   <div id="tscDateReminderHolder">
-                  <p><strong>Created:</strong> 27.05.2026.</p>
-                  <span>|</span>
-                  <p><strong>Due:</strong> 28.05.2026.</p>
+                    <p>
+                      <strong>Created:</strong> 27.05.2026.
+                    </p>
+                    <span>|</span>
+                    <p>
+                      <strong>Due:</strong> 28.05.2026.
+                    </p>
+                  </div>
+                  <div id="tscDeleteFinishBtnHolder">
+                    <button>delete</button>
+                    <button>finish</button>
+                  </div>
                 </div>
-                <div id="tscDeleteFinishBtnHolder">
-                  <button>delete</button>
-                  <button>finish</button>
-                </div>
-                </div>
-                
               </li>
             </ul>
           </div>

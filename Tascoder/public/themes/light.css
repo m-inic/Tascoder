@@ -5,11 +5,13 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  position: relative;
 }
 
 #tscLeftsideHolder {
   width: 302px;
   height: 100%;
+  position: relative;
 }
 
 #tscAppSidebar {
@@ -80,16 +82,16 @@
 
 #tscSettingsHolder {
   list-style: none;
-  position: absolute;
-  padding: 0px 8px 0px 8px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: 849px;
-  border-right: 1px solid #a8afbf;
-  justify-content: flex-end;
-  background: linear-gradient(225deg, #8cb0ff, #4a83ff);
-  top: 69px;
+    position: absolute;
+    padding: 0px 8px 0px 8px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid #a8afbf;
+    justify-content: flex-end;
+    background: linear-gradient(225deg, #8cb0ff, #4a83ff);
+    top: 0;
 }
 
 #tscSettingsHolder li {
@@ -104,14 +106,19 @@
   position: relative;
 }
 
-#tscBall {
+.tscBall {
   position: absolute;
   height: 14px;
   width: 14px;
   background: #000000;
   border-radius: 50%;
   top: 2px;
-  right: 2px;
+  left: 2px;
+  transition: all 0.2s;
+}
+
+.tscBallLeft {
+  left: 14px;
 }
 
 .tscSettingsBtns {
@@ -147,7 +154,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #767676;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #tscNewTaskHolder {
@@ -177,7 +184,7 @@
   justify-content: space-between;
   align-items: center;
   width: 320px;
-  height: 50px;
+  height: 100%;
 }
 
 #tscDIRholderFirstDate {
@@ -300,7 +307,7 @@
   display: flex;
   flex-direction: column;
   padding: 0rem 2rem 1rem 1rem;
-  height: 100px;
+  height: fit-content;
   justify-content: space-between;
 }
 
