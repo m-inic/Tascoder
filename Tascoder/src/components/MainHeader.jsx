@@ -26,6 +26,26 @@ export default function MainHeader() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const [theme, setTheme] = useState("light");
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    let linkElement = document.getElementById("dynamic-theme-link");
+    if (!linkElement) {
+      linkElement = document.createElement("link");
+      linkElement.id = "dynamic-theme-link";
+      linkElement.rel = "stylesheet";
+      linkElement.type = "text/css";
+      document.head.appendChild(linkElement);
+    }
+    linkElement.href = `/themes/${theme}.css`;
+  }, [theme]);
+
+  function handleThemeToggle() {
+    setClicked((prev) => !prev);
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  }
+
   return (
     <nav
       style={{
@@ -55,6 +75,17 @@ export default function MainHeader() {
               start now
             </Link>
           </li>
+          <button
+                className="tscSettingsBtns"
+                id="tscBallBtn"
+                onClick={handleThemeToggle}
+              >
+                <div id="tscBallHolder">
+                  <div
+                    className={`tscBall ${clicked ? "tscBallLeft" : ""}`}
+                  ></div>
+                </div>
+              </button>
         </ul>
       </div>
     </nav>

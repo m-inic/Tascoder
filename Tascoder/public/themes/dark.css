@@ -27,6 +27,50 @@ body #footerSection a {
   color: white;
 }
 
+body #footerSection #footerSocial {
+  filter: invert(1);
+}
+
+body #dealsSectionTitles h2 {
+  color: white;
+}
+
+body #dealsSectionTitles span {
+  color: rgb(118, 118, 118);
+}
+
+body #dealsSectionTitles span:hover {
+  color: #246aff;
+}
+
+body #dealsNamesHolder {
+  background: #132751;
+}
+
+body .featuresSectionSegment::before {
+  background: linear-gradient(90deg, #0f1728, #0f202800);
+}
+
+body .featuresSectionSegment::after {
+  background: linear-gradient(270deg, #0f1728, #0f202800);
+}
+
+body #featuresPageTitleHolder h3 {
+  color: white;
+}
+
+body #landingHeading h3 {
+  color: white;
+}
+
+body #landingHeading ul {
+  background: radial-gradient(#266cff, #6a99ff);
+}
+
+body #showcaseSectionTitleHolder p {
+  color: white;
+}
+
 #navListHolder #navBtn:hover {
   color: white;
 }
@@ -153,20 +197,19 @@ nav {
 }
 
 .tscSettingsBtns {
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  border: 1px solid black;
-  background: #e0eaff;
-  display: flex;
-  align-items: center;
-  transition: all 0.2s;
-  rotate: 0deg;
+    width: 46px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    rotate: 0deg;
+    filter: invert(1);
 }
 
 .tscSettingsBtns:hover {
   cursor: pointer;
-  background: #a8afbfbf;
   scale: 1.05;
 }
 

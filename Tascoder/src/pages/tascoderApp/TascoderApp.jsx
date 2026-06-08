@@ -1,12 +1,12 @@
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
-import "./public/themes/light.css";
+import "../../../public/themes/light.css";
 import dateIcon from "../../assets/dateIcon.png";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 export default function TascoderApp() {
-  const [theme, setTheme] = useState("light");
-  const [clicked, setClicked] = useState(false);
+  // const [theme, setTheme] = useState("light");
+  // const [clicked, setClicked] = useState(false);
 
   function tscHideBtnHandler() {
     const tscHideBtn = document.getElementById("tscHideBtn");
@@ -25,22 +25,22 @@ export default function TascoderApp() {
     tscLeftHolder.dataset.open = !isSidebarOpen;
   }
 
-  useEffect(() => {
-    let linkElement = document.getElementById("dynamic-theme-link");
-    if (!linkElement) {
-      linkElement = document.createElement("link");
-      linkElement.id = "dynamic-theme-link";
-      linkElement.rel = "stylesheet";
-      linkElement.type = "text/css";
-      document.head.appendChild(linkElement);
-    }
-    linkElement.href = `/themes/${theme}.css`;
-  }, [theme]);
+  // useEffect(() => {
+  //   let linkElement = document.getElementById("dynamic-theme-link");
+  //   if (!linkElement) {
+  //     linkElement = document.createElement("link");
+  //     linkElement.id = "dynamic-theme-link";
+  //     linkElement.rel = "stylesheet";
+  //     linkElement.type = "text/css";
+  //     document.head.appendChild(linkElement);
+  //   }
+  //   linkElement.href = `/themes/${theme}.css`;
+  // }, [theme]);
 
-  function handleThemeToggle() {
-    setClicked((prev) => !prev);
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  }
+  // function handleThemeToggle() {
+  //   setClicked((prev) => !prev);
+  //   setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  // }
 
   return (
     <>
@@ -142,7 +142,7 @@ export default function TascoderApp() {
           </div>
           <ul id="tscSettingsHolder">
             <li>
-              <button
+              {/* <button
                 className="tscSettingsBtns"
                 id="tscBallBtn"
                 onClick={handleThemeToggle}
@@ -152,7 +152,7 @@ export default function TascoderApp() {
                     className={`tscBall ${clicked ? "tscBallLeft" : ""}`}
                   ></div>
                 </div>
-              </button>
+              </button> */}
             </li>
             <li>
               <button
