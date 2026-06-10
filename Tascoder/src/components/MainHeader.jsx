@@ -38,7 +38,7 @@ export default function MainHeader() {
       linkElement.type = "text/css";
       document.head.appendChild(linkElement);
     }
-    linkElement.href = `/themes/${theme}.css`;
+    linkElement.href = `/${theme}.css`;
   }, [theme]);
 
   function handleThemeToggle() {
@@ -55,7 +55,7 @@ export default function MainHeader() {
       }}
     >
       <div id="logoHolder">
-        <Link to="/" href="" onClick={scrollToTop}>
+        <Link to="/" onClick={scrollToTop}>
           tascoder <img src={logo} alt="" />
         </Link>
       </div>

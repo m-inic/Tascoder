@@ -71,6 +71,10 @@ body #showcaseSectionTitleHolder p {
   color: white;
 }
 
+body #footerSection a::after {
+  background: white;
+}
+
 #navListHolder #navBtn:hover {
   color: white;
 }

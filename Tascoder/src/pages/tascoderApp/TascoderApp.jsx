@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
-import "../../../public/themes/light.css";
+import "../../../public/light.css";
 import dateIcon from "../../assets/dateIcon.png";
 // import { useState, useEffect } from "react";
 
@@ -34,7 +34,7 @@ export default function TascoderApp() {
   //     linkElement.type = "text/css";
   //     document.head.appendChild(linkElement);
   //   }
-  //   linkElement.href = `/themes/${theme}.css`;
+  //   linkElement.href = `/${theme}.css`;
   // }, [theme]);
 
   // function handleThemeToggle() {
