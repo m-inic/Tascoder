@@ -181,13 +181,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: 520px;
   height: 100%;
+}
+
+.tscChosenDate {
+
 }
 
 #tscDIRholderFirstDate {
   position: relative;
-  width: 57px;
+  width: 30%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,7 +208,7 @@
 }
 
 #tscDIRholderImportant {
-  width: fit-content;
+  width: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -212,7 +216,7 @@
 }
 
 #tscDIRholderReminder {
-  width: fit-content;
+  width: 30%;
   display: flex;
   position: relative;
 }

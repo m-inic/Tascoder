@@ -2,12 +2,20 @@ import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
 import "../../../public/light.css";
 import dateIcon from "../../assets/dateIcon.png";
-// import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function TascoderApp() {
-  // const [theme, setTheme] = useState("light");
-  // const [clicked, setClicked] = useState(false);
+  const [date, setDate] = useState("");
+  const [reminderDate, setReminderDate] = useState("")
 
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+  }
+
+  const handleReminderChange = (e) => {
+    setReminderDate(e.target.value);
+  }
+  
   function tscHideBtnHandler() {
     const tscHideBtn = document.getElementById("tscHideBtn");
     const tscSidebar = document.getElementById("tscAppSidebar");
@@ -24,23 +32,6 @@ export default function TascoderApp() {
     tscLeftHolder.style.width = isSidebarOpen ? "66px" : "302px";
     tscLeftHolder.dataset.open = !isSidebarOpen;
   }
-
-  // useEffect(() => {
-  //   let linkElement = document.getElementById("dynamic-theme-link");
-  //   if (!linkElement) {
-  //     linkElement = document.createElement("link");
-  //     linkElement.id = "dynamic-theme-link";
-  //     linkElement.rel = "stylesheet";
-  //     linkElement.type = "text/css";
-  //     document.head.appendChild(linkElement);
-  //   }
-  //   linkElement.href = `/${theme}.css`;
-  // }, [theme]);
-
-  // function handleThemeToggle() {
-  //   setClicked((prev) => !prev);
-  //   setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  // }
 
   return (
     <>
@@ -142,17 +133,6 @@ export default function TascoderApp() {
           </div>
           <ul id="tscSettingsHolder">
             <li>
-              {/* <button
-                className="tscSettingsBtns"
-                id="tscBallBtn"
-                onClick={handleThemeToggle}
-              >
-                <div id="tscBallHolder">
-                  <div
-                    className={`tscBall ${clicked ? "tscBallLeft" : ""}`}
-                  ></div>
-                </div>
-              </button> */}
             </li>
             <li>
               <button
@@ -197,7 +177,8 @@ export default function TascoderApp() {
                 <label htmlFor="tscTaskDate" id="tscDateLabel">
                   date
                 </label>
-                <input type="date" id="tscTaskDate" />
+                <input type="date" id="tscTaskDate" value={date} onChange={handleDateChange} />
+                <p className="tscChosenDate">{date ? date : ""}</p>
                 <img
                   src={dateIcon}
                   alt=""
@@ -208,7 +189,8 @@ export default function TascoderApp() {
                 <label htmlFor="tscReminder" id="tscReminderLabel">
                   reminder
                 </label>
-                <input type="date" id="tscReminder" />
+                <input type="date" id="tscReminder"  onChange={handleReminderChange}/>
+                <p className="tscChosenDate">{reminderDate ? reminderDate : ""}</p>
                 <img
                   src={dateIcon}
                   alt=""
