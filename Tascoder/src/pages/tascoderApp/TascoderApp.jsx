@@ -174,28 +174,32 @@ export default function TascoderApp() {
             </div>
             <div id="tscDIRholder">
               <div id="tscDIRholderFirstDate">
+                <div className="labelInputHolder">
                 <label htmlFor="tscTaskDate" id="tscDateLabel">
                   date
                 </label>
                 <input type="date" id="tscTaskDate" value={date} onChange={handleDateChange} />
-                <p className="tscChosenDate">{date ? date : ""}</p>
+                </div>
                 <img
                   src={dateIcon}
                   alt=""
                   className="tscDIRholderFirstDateImg"
                 />
+                <p>{date ? date : ""}</p>
               </div>
               <div id="tscDIRholderReminder">
-                <label htmlFor="tscReminder" id="tscReminderLabel">
+                <div className="labelInputHolder">
+                  <label htmlFor="tscReminder" id="tscReminderLabel">
                   reminder
                 </label>
                 <input type="date" id="tscReminder"  onChange={handleReminderChange}/>
-                <p className="tscChosenDate">{reminderDate ? reminderDate : ""}</p>
+                </div>
                 <img
                   src={dateIcon}
                   alt=""
                   className="tscDIRholderFirstDateImg"
                 />
+                <p className="tscChosenDate">{reminderDate ? reminderDate : ""}</p>
               </div>
               <div id="tscDIRholderImportant">
                 <label htmlFor="tscImportantBtn" id="tscImportantLabel">

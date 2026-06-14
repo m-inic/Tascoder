@@ -107,9 +107,9 @@ nav {
   justify-content: flex-start;
   padding: 0 0 21px 0px;
   background: #0f1728;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #a8afbf;
   position: relative;
-  left: 64px;
+  left: 66px;
   transition: all 0.3s;
 }
 
@@ -127,12 +127,13 @@ nav {
   height: 60px;
   display: flex;
   align-items: center;
-  background: #0f1728;
-  transition: all 0.2s;
+  background-color: #0f1728;
+  transition: all 0.1s;
+  border-bottom: 1px solid #a8afbf;
 }
 
 #tscAppSidebar menu li:hover {
-  background: #8bafff;
+  background-color: #f0e8d7;
 }
 
 #tscAppSidebar menu li svg {
@@ -140,23 +141,31 @@ nav {
   filter: invert(1);
 }
 
+#tscAppSidebar menu li:hover svg {
+  filter: invert(0);
+}
+
 .tscAppSideLinks {
   width: 100%;
   height: 100%;
   align-content: center;
-  transition: all 0.2s;
-  text-decoration: none;
-  color: white;
+  transition: all 0.1s;
 }
 
 #tscAppSidebar menu li:hover .tscAppSideLinks {
-  background: transparent;
+  filter: invert(1);
 }
 
 #tscAppSidebar menu div {
   width: 85px;
   display: flex;
   justify-content: center;
+}
+
+.tscAppSideLinks {
+  text-decoration: none;
+  color: white;
+  background: #0f1728;
 }
 
 #tscSettingsHolder {
@@ -167,10 +176,10 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100%;
+  border-right: 1px solid #a8afbf;
   justify-content: flex-end;
-  background: linear-gradient(270deg, #8cb0ff, #4a83ff);
+  background: linear-gradient(225deg, #8cb0ff, #4a83ff);
   top: 0;
-  border-right: 1px solid white;
 }
 
 #tscSettingsHolder li {
@@ -183,6 +192,7 @@ nav {
   border-radius: 11px;
   border: 2px solid #000000;
   position: relative;
+  filter: invert(1);
 }
 
 .tscBall {
@@ -200,16 +210,19 @@ nav {
   left: 14px;
 }
 
+#tscHideBtn {
+  filter: invert(1);
+}
+
 .tscSettingsBtns {
-    width: 46px;
-    height: 25px;
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s;
-    rotate: 0deg;
-    filter: invert(1);
+  width: 3rem;
+  height: 25px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  rotate: 0deg;
 }
 
 .tscSettingsBtns:hover {
@@ -261,12 +274,12 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 520px;
+  width: 590px;
   height: 100%;
 }
 
 .tscChosenDate {
-
+  margin-left: 1rem;
 }
 
 #tscDIRholderFirstDate {
@@ -277,14 +290,18 @@ nav {
   background-position: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+      border-right: 1px solid white;
+      height: 20px;
 }
 
 .tscDIRholderFirstDateImg {
   width: 16px;
   position: relative;
   height: 16px;
-  top: 2px;
+  right: 18px;
+  filter: invert(1);
 }
 
 #tscDIRholderImportant {
@@ -292,23 +309,24 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #tscDIRholderReminder {
-  width: 30%;
+  width: 36%;
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  border-right: 1px solid white;
+      height: 20px;
 }
 
 #tscTaskDate {
-  position: absolute;
   height: 16px;
   opacity: 0;
   width: 17px;
   z-index: 2;
-  right: -3px;
-  top: 0px;
 }
 
 #tscTaskDate::before {
@@ -355,7 +373,8 @@ nav {
 
 #tscDIRholderReminder .tscDIRholderFirstDateImg {
   position: absolute;
-  right: -1px;
+  left: 69px;
+  filter: invert(1);
 }
 
 #tscSubmitBtn {
@@ -383,7 +402,7 @@ nav {
 #tscTaskElementListHolder li {
   background: linear-gradient(160deg, #89afff, #3676ff);
   border-radius: 1rem;
-  border: 1px solid #a8afbf;
+  border: 1px solid white;
   box-shadow: 0px 1px 4px 1px #00000052;
   list-style: none;
   display: flex;
@@ -391,7 +410,6 @@ nav {
   padding: 0rem 2rem 1rem 1rem;
   height: fit-content;
   justify-content: space-between;
-  color: black;
 }
 
 #tscDateTscDeleteHolder {
