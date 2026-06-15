@@ -1,7 +1,7 @@
 #tscAppSection {
   margin-top: 68px;
   margin-bottom: -400px;
-  height: fit-content;
+  height: inherit;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -10,8 +10,12 @@
 
 #tscLeftsideHolder {
   width: 302px;
-  height: 100%;
+  height: inherit;
   position: relative;
+}
+
+#tscLeftsideHolder #tscAppSidebar {
+  height: 100%;
 }
 
 #tscAppSidebar {
@@ -143,6 +147,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
+  min-height: 810px;
 }
 
 #tscForm {
@@ -316,11 +322,11 @@
   display: flex;
   flex-direction: column;
   padding: 0rem 2rem 1rem 1rem;
-  height: fit-content;
+  height: 5rem;
   justify-content: space-between;
 }
 
-#tscDateTscDeleteHolder {
+.tscDateTscDeleteHolder {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -328,15 +334,19 @@
   width: 100%;
 }
 
-#tscDateReminderHolder {
+.tscDateReminderHolder {
   display: flex;
-  width: 19rem;
-  justify-content: space-between;
+  width: 50%;
   height: 2rem;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-#tscDeleteFinishBtnHolder {
+.tscDateReminderHolder p {
+  margin: 0px 10px 0px 10px;
+}
+
+.tscDeleteFinishBtnHolder {
   height: 32px;
   width: 120px;
   display: flex;
@@ -345,7 +355,7 @@
   align-items: flex-end;
 }
 
-#tscDeleteFinishBtnHolder button {
+.tscDeleteFinishBtnHolder button {
   width: 54px;
   height: 24px;
   border: 1px solid #000000;
@@ -355,10 +365,28 @@
   font-family: "Outfit";
 }
 
-#tscTaskDescriptionText {
+.tscTaskDescriptionText {
   margin: 14px 0 0 0;
+  height: 40px;
 }
 
 #tscDateReminderHolder p {
   margin: 0;
+}
+
+#tscTaskElementListHolder li + li {
+  margin-top: 1rem;
+}
+
+.tscFinishedTask .tscTaskDescriptionText {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.tscImportantTask {
+  border: 2px solid gold !important;
+}
+
+.tscImportantStar {
+  color: gold;
 }

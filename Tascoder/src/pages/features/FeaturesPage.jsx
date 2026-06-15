@@ -15,13 +15,15 @@ import sportage from "../../assets/sportage.jpg";
 import nsx from "../../assets/nsx.jpg";
 
 export default function FeaturesPage() {
+  const to = localStorage.getItem("tscAuth") === "true" ? "/tascoderApp" : "/startNow";
+  
   return (
     <>
       <section id="featuresPageSection">
         <div id="featuresPageTitleHolder">
           <h1>Stvari na koje se nasi ljudi PONOSE i koje vama olaksaju poso</h1>
           <h3>programeri vole da rade svoj poso</h3>
-          <Link to="/startNow" id="navBtn">
+          <Link to={to} id="navBtn">
             start now
           </Link>
         </div>

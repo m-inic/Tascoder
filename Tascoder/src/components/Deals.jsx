@@ -2,6 +2,8 @@ import "./Deals.css";
 import { Link } from "react-router";
 
 export default function Deals() {
+  const to = localStorage.getItem("tscAuth") === "true" ? "/tascoderApp" : "/startNow";
+
   const dealsList = [
     {
       id: 0,
@@ -70,7 +72,7 @@ export default function Deals() {
         <div className="dealsPriceBtnHolder">
           <div className="dealsPriceBtnBg"></div>
           <Link
-          to={"/startNow"}
+          to={to}
             className="dealsPriceBtn"
             onClick={scrollToTop}
             formAction="startNow"

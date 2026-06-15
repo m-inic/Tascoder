@@ -2,19 +2,32 @@ import "./Start.css";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/MainHeader";
 import { Link, useNavigate } from "react-router";
+import { useState } from "react";
 
 export default function Start() {
   const navigate = useNavigate();
 
+  const CREDENTIALS = { username: "yourname", password: "yourpassword" };
+const [loginError, setLoginError] = useState(false);
+
+
   function handleRegister(e) {
-    e.preventDefault();
+  e.preventDefault();
+  const username = e.target.elements.Fname.value;
+  const password = e.target.elements.Passw.value;
+
+  if (username === CREDENTIALS.username && password === CREDENTIALS.password) {
+    localStorage.setItem("tscAuth", "true");
     navigate("/tascoderApp");
+  } else {
+    setLoginError(true);
   }
+}
 
   function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
-  
+
   return (
     <>
       <MainHeader />
@@ -73,6 +86,7 @@ export default function Start() {
                   conditions
                 </Link>
               </p>
+              {loginError && <p style={{ color: "#ff6b6b", margin: "0" }}>Wrong credentials.</p>}
               <button id="startNowRegisterBtn" type="submit">
                 Register
               </button>
@@ -80,7 +94,11 @@ export default function Start() {
             <div id="startNowLoginOption">
               <p>
                 Already have an account?{" "}
-                <Link to="login" className="startNowLoginLink" onClick={scrollToTop}>
+                <Link
+                  to="login"
+                  className="startNowLoginLink"
+                  onClick={scrollToTop}
+                >
                   Login
                 </Link>
               </p>

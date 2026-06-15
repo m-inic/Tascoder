@@ -86,7 +86,7 @@ nav {
 #tscAppSection {
   margin-top: 68px;
   margin-bottom: -400px;
-  height: fit-content;
+  height: inherit;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -95,8 +95,12 @@ nav {
 
 #tscLeftsideHolder {
   width: 302px;
-  height: 100%;
+  height: inherit;
   position: relative;
+}
+
+#tscLeftsideHolder #tscAppSidebar {
+  height: 100%;
 }
 
 #tscAppSidebar {
@@ -236,6 +240,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 810px;
+  padding-bottom: 2rem;
 }
 
 #tscForm {

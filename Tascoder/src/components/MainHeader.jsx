@@ -6,6 +6,8 @@ import { Routes, Route, Link } from "react-router-dom";
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
 
+  const to = localStorage.getItem("tscAuth") === "true" ? "/tascoderApp" : "/startNow";
+
   const listenScrollEvent = () => {
     if (scrollY > 100) {
       setNavBg("unset");
@@ -86,7 +88,7 @@ export default function MainHeader() {
             </Link>
           </li>
           <li id="lastNavEl">
-            <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
+            <Link to={to} id="navBtn" onClick={scrollToTop}>
               start now
             </Link>
           </li>
