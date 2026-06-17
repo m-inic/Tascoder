@@ -76,6 +76,22 @@ nav {
   border-radius: 8px;
 }
 
+#tscLogoutBtn {
+  background: linear-gradient(135deg, #6d9bff, #2168ff);
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 18px;
+    color: black;
+}
+
+#tscLogoutBtn:hover {
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, #2168ff, #6d9bff);
+}
+
 #navListHolder #navBtn:hover {
   font-weight: bold;
   color: black;

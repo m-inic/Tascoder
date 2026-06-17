@@ -1,12 +1,15 @@
 import "./MainHeader.css";
 import logo from "../assets/tascoderLogo.png";
 import { useState, useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
+  const navigate = useNavigate();
 
-  const to = localStorage.getItem("tscAuth") === "true" ? "/tascoderApp" : "/startNow";
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    () => localStorage.getItem("tscAuth") === "true",
+  );
 
   const listenScrollEvent = () => {
     if (scrollY > 100) {
@@ -18,7 +21,6 @@ export default function MainHeader() {
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
-
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
@@ -33,8 +35,8 @@ export default function MainHeader() {
   });
 
   const [clicked, setClicked] = useState(() => {
-  return localStorage.getItem("theme") === "dark";
-});
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
     let linkElement = document.getElementById("dynamic-theme-link");
@@ -55,6 +57,12 @@ export default function MainHeader() {
       localStorage.setItem("theme", newTheme);
       return newTheme;
     });
+  }
+
+  function handleLogout() {
+    localStorage.removeItem("tscAuth");
+    setIsLoggedIn(false);
+    navigate("/startNow");
   }
 
   return (
@@ -87,11 +95,19 @@ export default function MainHeader() {
               support
             </Link>
           </li>
-          <li id="lastNavEl">
-            <Link to={to} id="navBtn" onClick={scrollToTop}>
-              start now
-            </Link>
-          </li>
+          {isLoggedIn ? (
+            <li>
+              <Link id="tscLogoutBtn" onClick={handleLogout}>
+                log out
+              </Link>
+            </li>
+          ) : (
+            <li id="lastNavEl">
+              <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
+                start now
+              </Link>
+            </li>
+          )}
           <button
             className="tscSettingsBtns"
             id="tscBallBtn"
