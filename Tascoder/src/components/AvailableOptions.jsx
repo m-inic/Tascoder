@@ -1,4 +1,5 @@
 import "./AvailableOptions.css";
+import "./masterComponentsQueries.css"
 import bunn from "../assets/bunn.jpg";
 import zus from "../assets/bnnuyComp.jpg";
 import zes from "../assets/bunns.jpg";

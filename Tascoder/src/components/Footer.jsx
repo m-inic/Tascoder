@@ -1,4 +1,5 @@
 import "./Footer.css";
+import "./masterComponentsQueries.css"
 import logo from "../assets/tascoderLogo.png";
 import instagram from "../assets/instagram.png";
 import facebook from "../assets/facebook.png";

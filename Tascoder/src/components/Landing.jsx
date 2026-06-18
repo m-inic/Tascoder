@@ -1,4 +1,5 @@
 import "./Landing.css";
+import "./masterComponentsQueries.css"
 import bnnuy from "../assets/bnnuy.jpg";
 import rocket from "../assets/rocketIcon.png";
 import clock from "../assets/clockFast.png";

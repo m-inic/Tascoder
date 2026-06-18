@@ -1,4 +1,5 @@
 import "./Showcase.css";
+import "./masterComponentsQueries.css"
 import { useState } from "react";
 import desktop from "../assets/desktop.png";
 import android from "../assets/android.png";

@@ -1,4 +1,5 @@
 import "./Deals.css";
+import "./masterComponentsQueries.css"
 import { Link } from "react-router";
 
 export default function Deals() {

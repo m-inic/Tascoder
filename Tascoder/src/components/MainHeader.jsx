@@ -1,10 +1,32 @@
 import "./MainHeader.css";
+import "./masterComponentsQueries.css";
 import logo from "../assets/tascoderLogo.png";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
+
+  function useWindowWidth() {
+    const [widthScreen, setWidthScreen] = useState(() =>
+      typeof window !== "undefined" ? window.innerWidth : 0,
+    );
+
+    useEffect(() => {
+      if (typeof window === "undefined") return;
+
+      const handleResize = () => setWidthScreen(window.innerWidth);
+
+      window.addEventListener("resize", handleResize);
+
+      // Clean up event listener on unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    return widthScreen;
+  }
+
+  const widthOfScreen = useWindowWidth();
+
   const navigate = useNavigate();
 
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -65,7 +87,7 @@ export default function MainHeader() {
     navigate("/startNow");
   }
 
-  return (
+  return widthOfScreen >= 1250 ? (
     <nav
       style={{
         background: navBg,
@@ -120,5 +142,9 @@ export default function MainHeader() {
         </ul>
       </div>
     </nav>
+  ) : (
+    <>
+      <a href="">aaaaaaaaaaaaa</a>
+    </>
   );
 }

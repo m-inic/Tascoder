@@ -1,4 +1,5 @@
 import "./Intro.css";
+import "./masterComponentsQueries.css"
 import "animate.css";
 import { useState } from "react";
 

@@ -1,4 +1,5 @@
 import "./Features.css";
+import "./masterComponentsQueries.css"
 import bnnuComp from "../assets/bnnuyComp.jpg";
 import bunnComp from "../assets/bunnyComp.jpg";
 import bunn from "../assets/bunn.jpg";
