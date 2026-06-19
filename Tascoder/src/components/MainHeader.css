@@ -78,12 +78,12 @@ nav {
 
 #tscLogoutBtn {
   background: linear-gradient(135deg, #6d9bff, #2168ff);
-    padding: 6px 12px 6px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.5s;
-    font-size: 18px;
-    color: black;
+  padding: 6px 12px 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 18px;
+  color: black;
 }
 
 #tscLogoutBtn:hover {
@@ -96,4 +96,52 @@ nav {
   font-weight: bold;
   color: black;
   background: linear-gradient(135deg, #2168ff, #6d9bff);
+}
+
+#burgBtnIconHolder {
+  width: 45px;
+  display: flex;
+  margin: 0 72px -5px 0;
+  flex-direction: column;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#burgBtnIconHolder span {
+  background-color: #2168ff;
+  width: 40px;
+  height: 6px;
+  margin-bottom: 6px;
+  transition: all 0.3s;
+}
+
+#span2BurgBtn {
+}
+
+#burgBtnIconHolder:hover {
+  height: 50px;
+  margin: 0 72px -14px 0;
+}
+
+#burgBtnIconHolder:hover #span1BurgBtn {
+  background-color: #ffffff00;
+  height: 39px;
+  border: 5px solid #00000000;
+  border-radius: 50%;
+  border-top-color: #2168ff;
+  border-left-color: #2168ff;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+#burgBtnIconHolder:hover #span2BurgBtn {
+  background-color: #ffffff00;
+  height: 39px;
+  border: 5px solid #00000000;
+  border-radius: 50%;
+  border-top-color: #2168ff;
+  border-left-color: #2168ff;
+  transform: rotate(225deg);
+  position: absolute;
 }

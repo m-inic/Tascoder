@@ -144,7 +144,64 @@ export default function MainHeader() {
     </nav>
   ) : (
     <>
-      <a href="">aaaaaaaaaaaaa</a>
+      <nav
+        style={{
+          background: navBg,
+          transition: "background-color 0.3s ease",
+          backdropFilter: "blur(20px)",
+        }}
+      >
+        <div id="logoHolder">
+          <Link to="/" onClick={scrollToTop}>
+            tascoder <img src={logo} alt="" />
+          </Link>
+        </div>
+        {/* <div id="navListHolder">
+        <ul>
+          <li>
+            <Link to="/features" onClick={scrollToTop}>
+              features
+            </Link>
+          </li>
+          <li>
+            <Link to="/deals" onClick={scrollToTop}>
+              deals
+            </Link>
+          </li>
+          <li>
+            <Link to="/support" onClick={scrollToTop}>
+              support
+            </Link>
+          </li>
+          {isLoggedIn ? (
+            <li>
+              <Link id="tscLogoutBtn" onClick={handleLogout}>
+                log out
+              </Link>
+            </li>
+          ) : (
+            <li id="lastNavEl">
+              <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
+                start now
+              </Link>
+            </li>
+          )}
+          <button
+            className="tscSettingsBtns"
+            id="tscBallBtn"
+            onClick={handleThemeToggle}
+          >
+            <div id="tscBallHolder">
+              <div className={`tscBall ${clicked ? "tscBallLeft" : ""}`}></div>
+            </div>
+          </button>
+        </ul>
+      </div> */}
+        <div id="burgBtnIconHolder">
+          <span id="span1BurgBtn"></span>
+          <span id="span2BurgBtn"></span>
+        </div>
+      </nav>
     </>
   );
 }
