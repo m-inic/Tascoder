@@ -201,6 +201,47 @@ export default function MainHeader() {
           <span id="span1BurgBtn"></span>
           <span id="span2BurgBtn"></span>
         </div>
+        <div id="halfCircleMenu">
+          <ul id="halfCircleMenuList">
+          <li>
+            <Link to="/features" onClick={scrollToTop}>
+              features
+            </Link>
+          </li>
+          <li>
+            <Link to="/deals" onClick={scrollToTop}>
+              deals
+            </Link>
+          </li>
+          <li>
+            <Link to="/support" onClick={scrollToTop}>
+              support
+            </Link>
+          </li>
+          {isLoggedIn ? (
+            <li>
+              <Link id="tscLogoutBtn" className="halfCircleLogOut" onClick={handleLogout}>
+                log out
+              </Link>
+            </li>
+          ) : (
+            <li id="lastNavEl">
+              <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
+                start now
+              </Link>
+            </li>
+          )}
+          <button
+            className="tscSettingsBtns"
+            id="tscBallBtn"
+            onClick={handleThemeToggle}
+          >
+            <div id="tscBallHolder">
+              <div className={`tscBall ${clicked ? "tscBallLeft" : ""}`}></div>
+            </div>
+          </button>
+        </ul>
+        </div>
       </nav>
     </>
   );

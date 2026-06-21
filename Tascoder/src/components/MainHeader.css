@@ -99,20 +99,21 @@ nav {
 }
 
 #burgBtnIconHolder {
-  width: 45px;
+  width: 39px;
   display: flex;
-  margin: 0 72px -5px 0;
+  margin: 0 72px 2px 0;
   flex-direction: column;
-  height: 24px;
-  justify-content: center;
+  height: 20px;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 #burgBtnIconHolder span {
   background-color: #2168ff;
   width: 40px;
   height: 6px;
-  margin-bottom: 6px;
   transition: all 0.3s;
 }
 
@@ -120,7 +121,7 @@ nav {
 }
 
 #burgBtnIconHolder:hover {
-  height: 50px;
+  height: 52px;
   margin: 0 72px -14px 0;
 }
 
@@ -144,4 +145,83 @@ nav {
   border-left-color: #2168ff;
   transform: rotate(225deg);
   position: absolute;
+}
+
+#halfCircleMenu {
+  position: absolute;
+  background: linear-gradient(45deg, #2a6ef9, #99bbfe);
+  border-bottom-left-radius: 100%;
+  height: 30rem;
+  width: 30rem;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#halfCircleMenu ul {
+  height: 28rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#halfCircleMenuList a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#halfCircleMenuList li:nth-child(1) {
+  transition: all 0.3s;
+  margin-left: 3rem;
+}
+
+#halfCircleMenuList li:nth-child(1):hover {
+  scale: 1.1;
+  margin-left: 4rem;
+}
+
+#halfCircleMenuList li:nth-child(2) {
+  transition: all 0.3s;
+  margin-left: 6rem;
+}
+
+#halfCircleMenuList li:nth-child(2):hover {
+  scale: 1.1;
+  margin-left: 7rem;
+}
+
+#halfCircleMenuList li:nth-child(3) {
+  transition: all 0.3s;
+  margin-left: 9rem;
+}
+
+#halfCircleMenuList li:nth-child(3):hover {
+  scale: 1.1;
+  margin-left: 9.6rem;
+}
+
+#halfCircleMenuList li:nth-child(4) {
+  transition: all 0.3s;
+  margin-left: 13rem;
+}
+
+.halfCircleLogOut {
+  border: 2px solid white;
+}
+
+#halfCircleMenuList li:nth-child(4):hover {
+  scale: 1.1;
+  margin-left: 13.4rem;
+}
+
+#halfCircleMenuList button:nth-child(5) {
+  transition: all 0.3s;
+  margin-left: 19rem;
+  scale: 1.3;
 }
