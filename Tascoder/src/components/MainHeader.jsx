@@ -6,6 +6,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
+  const [hambBtn, setHambBtn] = useState(false);
+
+  function openHambMenu() {
+    setHambBtn(!hambBtn)
+  }
 
   function useWindowWidth() {
     const [widthScreen, setWidthScreen] = useState(() =>
@@ -19,7 +24,6 @@ export default function MainHeader() {
 
       window.addEventListener("resize", handleResize);
 
-      // Clean up event listener on unmount
       return () => window.removeEventListener("resize", handleResize);
     }, []);
     return widthScreen;
@@ -197,9 +201,9 @@ export default function MainHeader() {
           </button>
         </ul>
       </div> */}
-        <div id="burgBtnIconHolder">
-          <span id="span1BurgBtn"></span>
-          <span id="span2BurgBtn"></span>
+        <div id="burgBtnIconHolder" className={hambBtn ? "burgBtnIconHolder burgBtnIconHolderHovered" : "burgBtnIconHolder"} onClick={openHambMenu}>
+          <span className={hambBtn ? "span1BurgBtn span1BurgBtnHovered" : "span1BurgBtn"} onClick={openHambMenu}></span>
+          <span className={hambBtn ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"} onClick={openHambMenu}></span>
         </div>
         <div id="halfCircleMenu">
           <ul id="halfCircleMenuList">
@@ -226,7 +230,7 @@ export default function MainHeader() {
             </li>
           ) : (
             <li id="lastNavEl">
-              <Link to="/startNow" id="navBtn" onClick={scrollToTop}>
+              <Link to="/startNow" id="navBtn" className="navBtnStart" onClick={scrollToTop}>
                 start now
               </Link>
             </li>

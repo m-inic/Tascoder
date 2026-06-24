@@ -76,6 +76,10 @@ nav {
   border-radius: 8px;
 }
 
+.navBtnStart {
+  border: 1px solid white;
+}
+
 #tscLogoutBtn {
   background: linear-gradient(135deg, #6d9bff, #2168ff);
   padding: 6px 12px 6px 12px;
@@ -98,7 +102,7 @@ nav {
   background: linear-gradient(135deg, #2168ff, #6d9bff);
 }
 
-#burgBtnIconHolder {
+.burgBtnIconHolder {
   width: 39px;
   display: flex;
   margin: 0 72px 2px 0;
@@ -110,22 +114,26 @@ nav {
   z-index: 1;
 }
 
-#burgBtnIconHolder span {
+.span1BurgBtn {
   background-color: #2168ff;
   width: 40px;
   height: 6px;
   transition: all 0.3s;
 }
 
-#span2BurgBtn {
+.span2BurgBtn {
+  background-color: #2168ff;
+  width: 40px;
+  height: 6px;
+  transition: all 0.3s;
 }
 
-#burgBtnIconHolder:hover {
+.burgBtnIconHolderHovered {
   height: 52px;
   margin: 0 72px -14px 0;
 }
 
-#burgBtnIconHolder:hover #span1BurgBtn {
+.span1BurgBtnHovered {
   background-color: #ffffff00;
   height: 39px;
   border: 5px solid #00000000;
@@ -136,7 +144,7 @@ nav {
   position: absolute;
 }
 
-#burgBtnIconHolder:hover #span2BurgBtn {
+.span2BurgBtnHovered {
   background-color: #ffffff00;
   height: 39px;
   border: 5px solid #00000000;
@@ -168,6 +176,8 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
+  border-bottom-left-radius: 100%;
+  transition: all 0.3s;
 }
 
 #halfCircleMenuList a {
