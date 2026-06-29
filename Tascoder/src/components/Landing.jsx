@@ -44,7 +44,7 @@ export default function Landing() {
           </ul>
         </div>
         <div id="landingImg">
-          <img src={bnnuy} alt="bnnuy" />
+          <img src={bnnuy} alt="bnnuy" id="landingBunny"/>
         </div>
       </section>
       <div>

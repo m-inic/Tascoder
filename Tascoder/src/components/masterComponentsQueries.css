@@ -6,3 +6,32 @@
 @import url(MainHeader.css);
 @import url(Showcase.css);
 @import url(Landing.css);
+
+@media (max-width: 1250px) {
+  #landingImg #landingBunny {
+            min-width: 330px;
+        margin: -16px 0 0 0;
+        height: 330px;
+        object-fit: cover;
+  }
+  #landing {
+    position: relative;
+  }
+
+  #landing #landingHeading {
+    width: 45%;
+  }
+
+  #landingImg {
+    width: 50%;
+    position: absolute;
+    right: 3%;
+  }
+
+  #landing #landingHeading ul {
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    left: 0;
+  }
+}

@@ -6,11 +6,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function MainHeader() {
   const [navBg, setNavBg] = useState("");
-  const [hambBtn, setHambBtn] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  function openHambMenu() {
-    setHambBtn(!hambBtn)
-  }
+function toggleHambMenu() {
+  setMenuOpen((prev) => !prev);
+}
 
   function useWindowWidth() {
     const [widthScreen, setWidthScreen] = useState(() =>
@@ -201,11 +201,13 @@ export default function MainHeader() {
           </button>
         </ul>
       </div> */}
-        <div id="burgBtnIconHolder" className={hambBtn ? "burgBtnIconHolder burgBtnIconHolderHovered" : "burgBtnIconHolder"} onClick={openHambMenu}>
-          <span className={hambBtn ? "span1BurgBtn span1BurgBtnHovered" : "span1BurgBtn"} onClick={openHambMenu}></span>
-          <span className={hambBtn ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"} onClick={openHambMenu}></span>
+        <div id="burgBtnIconHolder"
+  className={menuOpen ? "burgBtnIconHolder burgBtnIconHolderHovered" : "burgBtnIconHolder"}
+  onClick={toggleHambMenu}>
+          <span className={menuOpen ? "span1BurgBtn span1BurgBtnHovered" : "span1BurgBtn"}></span>
+          <span className={menuOpen ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"}></span>
         </div>
-        <div id="halfCircleMenu">
+        <div className={menuOpen  ? "halfCircleMenu" : "burgBtnIconHolderRemove"}>
           <ul id="halfCircleMenuList">
           <li>
             <Link to="/features" onClick={scrollToTop}>
