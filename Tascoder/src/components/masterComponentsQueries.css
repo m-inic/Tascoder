@@ -8,11 +8,15 @@
 @import url(Landing.css);
 
 @media (max-width: 1250px) {
+/*#####################################################################
+  ####################### LANDING PAGE ################################
+  #####################################################################*/
+
   #landingImg #landingBunny {
-            min-width: 330px;
-        margin: -16px 0 0 0;
-        height: 330px;
-        object-fit: cover;
+    min-width: 330px;
+    margin: -16px 0 0 0;
+    height: 330px;
+    object-fit: cover;
   }
   #landing {
     position: relative;
@@ -34,4 +38,162 @@
     bottom: -100px;
     left: 0;
   }
+
+  #introSection #bunnsHolder li {
+    width: 10rem;
+    height: 20rem;
+  }
+
+  #introSection .bunnsHolderImg {
+    width: 9rem;
+    height: 10rem;
+  }
+
+  #featuresSection .img1 {
+    width: 85%;
+    min-width: 300px;
+  }
+
+  #dealsSection h1 {
+    text-align: center;
+  }
+
+  #dealsSection #dealsList {
+    width: 100%;
+  }
+
+  #dealsSection .dealsListItem {
+    min-width: 200px;
+    height: 650px;
+  }
+
+  #dealsSection .dealsPriceHolder {
+    flex-direction: column;
+  }
+
+  #showcaseSection #showcaseSectionGallery {
+    width: 80%;
+  }
+
+  #showcaseSection #showcaseSectionGallery img {
+    width: 99%;
+  }
+
+  #availableOptionsSection .availableOptionsTextsHolder {
+    justify-content: space-between;
+    height: 650px;
+  }
+
+  #availableOptionsSection #availableOptionsArticle1 {
+    position: relative;
+    height: 25%;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #availableOptionsArticle1 .availableOptionsImg {
+    justify-content: flex-start;
+    margin-top: 146px;
+  }
+
+  #availableOptionsArticle1 .availableOptionsTextsHolder h2 {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  #availableOptionsArticle1 .availableOptionsTextsHolder q {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    font-size: 18px;
+  }
+
+  .availableOptionsTextsHolder li p {
+    font-size: 16px;
+  }
+
+  .availableOptionsTextsHolder li span {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #availableOptionsSection .availableOptionsTextsHolder li {
+    width: 314px;
+  }
+
+  #availableOptionsSection #availableOptionsArticle2 {
+    position: relative;
+    height: 25%;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #availableOptionsArticle2 .availableOptionsTextsHolder h2 {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #availableOptionsArticle2 .availableOptionsImg {
+    justify-content: flex-start;
+    margin-top: 146px;
+  }
+
+  #availableOptionsArticle2 .availableOptionsTextsHolder q {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 40%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #availableOptionsSection #availableOptionsArticle3 {
+    position: relative;
+    height: 25%;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #availableOptionsArticle3 .availableOptionsTextsHolder h2 {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  #availableOptionsArticle3 .availableOptionsImg {
+    justify-content: flex-start;
+    margin-top: 146px;
+  }
+
+  #availableOptionsArticle3 .availableOptionsTextsHolder q {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    font-size: 18px;
+  }
+
+  #root #footerSection {
+    margin-top: 10rem;
+  }
+
+  /*#####################################################################
+  ####################### FEATURES PAGE ################################
+  #####################################################################*/
+
+
 }
