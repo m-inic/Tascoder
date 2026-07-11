@@ -8,7 +8,37 @@
 @import url(Landing.css);
 
 @media (max-width: 1250px) {
-/*#####################################################################
+  /*#####################################################################
+  ####################### FOOTER ################################
+  #####################################################################*/
+
+  #root #footerSection {
+    margin-top: 10rem;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  #root #footerSection #footerSocial {
+    position: absolute;
+    width: 85%;
+    flex-direction: row;
+    height: 24rem;
+    justify-content: space-between;
+  }
+
+  #footerSection #footerListsHolder {
+    width: 480px;
+    flex-direction: row-reverse;
+  }
+
+  #footerListsHolder .footerLists h3 {
+    text-align: right;
+  }
+
+  #root #footerSection ul {
+    align-items: flex-end;
+  }
+
+  /*#####################################################################
   ####################### LANDING PAGE ################################
   #####################################################################*/
 
@@ -187,13 +217,84 @@
     font-size: 18px;
   }
 
-  #root #footerSection {
-    margin-top: 10rem;
-  }
-
   /*#####################################################################
   ####################### FEATURES PAGE ################################
   #####################################################################*/
 
+  #featuresPageSection #featuresPageTitleHolder h1 {
+    font-size: 2.5rem;
+    width: 46rem;
+  }
 
+  #featuresPageSection #featuresPageImagesHolder ul {
+    width: 100%;
+  }
+
+  #featuresPageSection #carouselHolder .wavesFeaturesPage1 {
+    top: 133%;
+  }
+
+  #featuresPageSection #carouselHolder .wavesFeaturesPage2 {
+    bottom: -105%;
+  }
+
+  /*#####################################################################
+  ####################### DEALS PAGE ################################
+  #####################################################################*/
+
+  #dealsSection #dealsSectionTitles h1 {
+    font-size: 2.5rem;
+  }
+
+  #root #dealsSection {
+    margin-bottom: 3rem;
+  }
+
+  #dealsTableSection #dealsPageStartNow {
+    margin: 100px 0 -90px 0;
+  }
+
+  /*#####################################################################
+  ####################### SUPPORT PAGE ################################
+  #####################################################################*/
+
+  #root #availableOptionsTitleHolder img {
+    width: 25rem;
+    top: 180px;
+  }
+
+  #root #availableOptionsTitleHolder h2 {
+    font-size: 9rem;
+  }
+
+  #root #startNowSection {
+    margin-bottom: -160px;
+    padding-right: 1rem;
+  }
+
+  #root #startNowSection form {
+    width: 40%;
+  }
+
+  #startNowSection #startNowLeftside {
+    transform: skewX(15deg);
+    left: -7rem;
+    width: 60%;
+  }
+
+  #startNowLeftside #startNowDescriptionHolder {
+    transform: skewX(345deg);
+  }
+
+  #startNowSection #startNowFillOut {
+    width: 18rem;
+  }
+  #startNowSection #startNowTerms {
+    position: relative;
+    left: 134px;
+  }
+
+  #startNowLeftside #startNowDescriptionHolder p {
+    width: 50%;
+  }
 }
