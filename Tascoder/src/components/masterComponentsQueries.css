@@ -276,6 +276,10 @@
     width: 40%;
   }
 
+  /*#####################################################################
+  ####################### START NOW PAGE ################################
+  #####################################################################*/
+
   #startNowSection #startNowLeftside {
     transform: skewX(15deg);
     left: -7rem;
@@ -296,5 +300,60 @@
 
   #startNowLeftside #startNowDescriptionHolder p {
     width: 50%;
+  }
+
+  /*#####################################################################
+  ####################### APP PAGE ################################
+  #####################################################################*/
+
+  #root #tscAppSection {
+    margin-bottom: -160px;
+  }
+
+  #tscAppSection #tscAppLayout {
+    margin-bottom: 0;
+  }
+
+  #tscTaskElementListHolder #tscTaskElementListHolder li {
+    margin: auto;
+    width: 85%;
+  }
+
+  #tscForm #tscDIRholder {
+    width: 330px;
+  }
+
+  #tscDIRholder #tscDIRholderFirstDate {
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #tscDIRholder #tscDIRholderReminder {
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #tscDIRholderFirstDate .tscDIRholderFirstDateImg {
+    position: absolute;
+    top: 2px;
+    left: 36px;
+  }
+
+  #tscDIRholder .tscChosenDate {
+    margin: 8px 0 0 0;
+  }
+
+  #tscDIRholderReminder .tscDIRholderFirstDateImg {
+    top: 2px;
+  }
+
+  #tscDIRholder #tscDIRholderImportant {
+    margin-bottom: 8px;
+  }
+
+  #tscForm #tscSubmitBtn {
+    margin-bottom: 4px;
   }
 }

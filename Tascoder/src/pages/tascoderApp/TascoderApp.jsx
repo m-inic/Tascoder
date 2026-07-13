@@ -287,7 +287,7 @@ export default function TascoderApp() {
                     alt=""
                     className="tscDIRholderFirstDateImg"
                   />
-                  <p>{date ? formatDate(date) : ""}</p>
+                  <p className="tscChosenDate">{date ? formatDate(date) : ""}</p>
                 </div>
                 <div id="tscDIRholderReminder">
                   <div className="labelInputHolder">
