@@ -357,3 +357,43 @@
     margin-bottom: 4px;
   }
 }
+
+@media (max-width: 750px) {
+  #root #landing {
+    justify-content: center;
+    margin: 68px 0 0 0;
+    width: 100%;
+  }
+
+  #root #landing #landingHeading {
+    top: -39px;
+    position: relative;
+    justify-content: center;
+    width: unset;
+  }
+
+  #landing #landingHeading h3 {
+    display: none;
+  }
+
+  #landing #landingHeading h1 {
+    margin: 0;
+    font-size: 5rem;
+  }
+
+  #landing #landingImg {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 30rem;
+    z-index: -1;
+    opacity: 0.67;
+  }
+
+  #landingImg #landingBunny {
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+    filter: blur(2px);
+  }
+}
