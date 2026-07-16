@@ -359,33 +359,52 @@
 }
 
 @media (max-width: 750px) {
+  nav #logoHolder {
+    margin-left: 20px;
+  }
+
+  nav .burgBtnIconHolder {
+    margin-right: 20px;
+  }
+
   #root #landing {
     justify-content: center;
     margin: 68px 0 0 0;
+    height: 45rem;
     width: 100%;
   }
 
   #root #landing #landingHeading {
-    top: -39px;
+    top: 11px;
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: unset;
+    height: 40rem;
   }
 
   #landing #landingHeading h3 {
-    display: none;
+    font-size: 22px;
+    color: #000000;
+    background: #2b6ffa69;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 75%;
+    margin: 0;
   }
 
   #landing #landingHeading h1 {
     margin: 0;
     font-size: 5rem;
+    text-align: center;
   }
 
   #landing #landingImg {
     top: 0;
     right: 0;
     width: 100%;
-    height: 30rem;
+    height: 45rem;
     z-index: -1;
     opacity: 0.67;
   }
@@ -395,5 +414,96 @@
     border-radius: 0;
     margin: 0;
     filter: blur(2px);
+  }
+
+  #landing #landingHeading ul {
+    position: relative;
+    width: 90%;
+    bottom: unset;
+  }
+
+  nav .halfCircleMenu {
+    border-bottom-left-radius: 0;
+    height: 100vh;
+    width: 60%;
+    box-shadow: -20px 0px 20px 300px #00000091;
+  }
+
+  #halfCircleMenuList {
+    align-items: center;
+    padding: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(1) {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(1):hover {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(2) {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(2):hover {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(3) {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(3):hover {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(4) {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList li:nth-child(4):hover {
+    margin: 0;
+    scale: 1.1;
+  }
+
+  .halfCircleMenu #halfCircleMenuList button:nth-child(5) {
+    margin: 0;
+  }
+
+  .halfCircleMenu #halfCircleMenuList button:nth-child(5):hover {
+    margin: 0;
+  }
+
+  #root .wavesLanding {
+    scale: 5;
+  }
+
+  #root #wavesLanding1 {
+bottom: -5rem;
+  }
+
+  #root #wavesLanding2{
+bottom: -10rem;
+  }
+
+  #root #wavesLanding3{
+bottom: -15rem;
+  }
+
+  #wavesIntroHolder .wavesIntro {
+    scale: 5;
+  }
+
+  #wavesIntroHolder #wavesIntro1 {
+        top: 15rem;
+  }
+
+  #wavesIntroHolder #wavesIntro2 {
+        top: 20rem;
+  }
+
+  #wavesIntroHolder #wavesIntro3 {
+        top: 25rem;
   }
 }
