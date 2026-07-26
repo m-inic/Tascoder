@@ -392,3 +392,15 @@
 .tscImportantStar {
   color: gold;
 }
+
+#featuresInfoHolder .featuresInfo:nth-child(1) {
+  background: none;
+}
+
+#featuresInfoHolder .featuresInfo:nth-child(2) {
+  background: none;
+}
+
+#featuresInfoHolder .featuresInfo:nth-child(3) {
+  background: none;
+}
