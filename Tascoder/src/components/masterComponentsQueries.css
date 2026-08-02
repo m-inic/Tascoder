@@ -620,7 +620,7 @@
   }
 
   #featuresInfoHolder .featuresInfo:nth-child(3) {
-    bottom: 0;
+    bottom: 25px;
     width: 100%;
     background: #ffffffba;
     padding: 24px;
@@ -675,5 +675,27 @@
   #dealsSection .dealsListItem {
     height: 550px;
     width: 80%;
+  }
+
+  #root #showcaseSection {
+    height: fit-content;
+  }
+
+  #showcaseSection #showcaseSectionTitleHolder {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+
+  body #showcaseSectionTitleHolder h1 {
+    text-align: center;
+  }
+
+  #showcaseSection #showcaseSectionGallery {
+    width: 95%;
+    height: 19rem;
+  }
+
+  #showcaseSection #showcaseSectionGallery img {
+    height: 300px;
   }
 }
