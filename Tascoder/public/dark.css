@@ -464,13 +464,21 @@ nav {
 @media (max-width: 750px) {
   #featuresInfoHolder .featuresInfo:nth-child(1) {
     background: #ffffffba;
+    max-height: 461px;
+    min-width: 255px;
   }
-  
+
   #featuresInfoHolder .featuresInfo:nth-child(2) {
     background: #ffffffba;
+    max-height: 461px;
+    min-width: 255px;
+    margin: 5% 0 83px 0px;
   }
-  
+
   #featuresInfoHolder .featuresInfo:nth-child(3) {
     background: #ffffffba;
+    max-height: 540px;
+    min-width: 255px;
+    bottom: 4px;
   }
 }
