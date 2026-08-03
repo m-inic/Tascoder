@@ -701,7 +701,7 @@
   }
 
   #root #availableOptionsSection #availableOptionsArticle1 {
-    height: 30%;
+    height: 1000px;
   }
 
   #root #availableOptionsSection .availableOptionsTextsHolder {
@@ -711,7 +711,7 @@
 
   #availableOptionsArticle1 .availableOptionsTextsHolder h2 {
     width: 42%;
-    font-size: 25px;
+    font-size: calc(12px + 1.5vw);
     top: 5px;
   }
 
@@ -721,12 +721,13 @@
     ul {
     position: absolute;
     width: 100%;
-    bottom: 80px;
+    bottom: 120px;
     height: 360px;
   }
 
   #availableOptionsArticle1 .availableOptionsTextsHolder h1 {
-    font-size: 34px;
+    font-size: calc(20px + 1.5vw);
+    max-width: 16rem;
   }
 
   #root #availableOptionsSection .availableOptionsTextsHolder li {
@@ -739,6 +740,19 @@
     position: absolute;
     height: 10rem;
     left: 0;
-    top: 235px;
+    top: 180px;
+  }
+
+  #availableOptionsSection
+    #availableOptionsArticle1
+    .availableOptionsTextsHolder
+    q {
+    left: 50%;
+    top: 442px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    bottom: unset;
+    max-width: 430px;
   }
 }
