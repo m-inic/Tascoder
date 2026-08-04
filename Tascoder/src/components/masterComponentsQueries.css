@@ -723,6 +723,7 @@
     width: 100%;
     bottom: 120px;
     height: 360px;
+    margin-left: -1%;
   }
 
   #availableOptionsArticle1 .availableOptionsTextsHolder h1 {
@@ -731,9 +732,9 @@
   }
 
   #root #availableOptionsSection .availableOptionsTextsHolder li {
-    width: 96%;
+    width: 94%;
     max-width: 635px;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
   }
 
   #availableOptionsArticle1 .availableOptionsImg img {
@@ -754,5 +755,13 @@
     text-align: center;
     bottom: unset;
     max-width: 430px;
+  }
+
+  .availableOptionsTextsHolder .availableOptionsProfile {
+    width: 16rem;
+  }
+
+  .availableOptionsTextsHolder .availableOptionsProfile div {
+    width: 8rem;
   }
 }
