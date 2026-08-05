@@ -764,4 +764,116 @@
   .availableOptionsTextsHolder .availableOptionsProfile div {
     width: 8rem;
   }
+
+  #availableOptionsSection {
+    height: 3300px;
+    justify-content: space-evenly;
+  }
+
+  #availableOptionsSection #availableOptionsArticle2 {
+    height: 1000px;
+  }
+
+  #availableOptionsArticle2 .availableOptionsTextsHolder h1 {
+    font-size: calc(20px + 1.5vw);
+    min-width: 141px;
+    max-width: 207px;
+    align-self: flex-end;
+  }
+
+  #availableOptionsArticle2 .availableOptionsTextsHolder h2 {
+    width: 42%;
+    font-size: calc(12px + 1.5vw);
+    top: 5px;
+  }
+
+  #availableOptionsSection
+    #availableOptionsArticle2
+    .availableOptionsTextsHolder
+    ul {
+    position: absolute;
+    width: 100%;
+    bottom: 120px;
+    height: 360px;
+    margin-left: -53%;
+  }
+
+  #availableOptionsArticle2 .availableOptionsImg img {
+    position: absolute;
+    height: 10rem;
+    left: 0;
+    top: 180px;
+  }
+
+  #availableOptionsSection
+    #availableOptionsArticle2
+    .availableOptionsTextsHolder
+    q {
+    left: 50%;
+    top: 442px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    bottom: unset;
+    max-width: 430px;
+  }
+
+  #root #availableOptionsSection #availableOptionsArticle3 {
+    height: 1000px;
+  }
+
+  #availableOptionsArticle3 .availableOptionsTextsHolder h1 {
+    font-size: calc(20px + 1.5vw);
+    max-width: 16rem;
+  }
+
+  #availableOptionsArticle3 .availableOptionsTextsHolder h2 {
+    width: 42%;
+    font-size: calc(12px + 1.5vw);
+    top: 5px;
+  }
+
+  #availableOptionsSection
+    #availableOptionsArticle3
+    .availableOptionsTextsHolder
+    ul {
+    position: absolute;
+    width: 100%;
+    bottom: 120px;
+    height: 360px;
+    margin-left: -1%;
+  }
+
+  #availableOptionsSection
+    #availableOptionsArticle3
+    .availableOptionsTextsHolder
+    q {
+    left: 50%;
+    top: 442px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    bottom: unset;
+    max-width: 430px;
+  }
+
+  #availableOptionsArticle3 .availableOptionsImg {
+    justify-content: flex-start;
+    margin-top: 146px;
+  }
+
+  #availableOptionsArticle3 .availableOptionsImg img {
+    position: absolute;
+    height: 10rem;
+    left: 0;
+    top: 180px;
+  }
+
+  #footerSection #footerTitleHolder {
+    width: 123px;
+  }
+
+  #root #footerSection #footerSocial {
+    z-index: -1;
+  }
 }
