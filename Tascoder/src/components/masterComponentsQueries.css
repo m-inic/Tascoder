@@ -902,12 +902,12 @@
 
   #root #footerSection #footerListsHolder {
     height: fit-content;
-        width: 90%;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        position: relative;
-        min-width: 320px;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    min-width: 320px;
   }
 
   #footerListsHolder .footerLists {
@@ -924,5 +924,34 @@
   #footerListsHolder .footerLists:nth-child(3) {
     height: 18rem;
     margin-bottom: 56px;
+  }
+
+  #root #featuresPageSection {
+    height: 1700px;
+  }
+
+  #featuresPageSection #featuresPageTitleHolder h1 {
+    width: 90%;
+    font-size: calc(20px + 2vw);
+  }
+
+  #featuresPageTitleHolder h3 {
+    width: 90%;
+  }
+
+  #featuresPageSection #featuresPageImagesHolder ul {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  #featuresPageSection #featuresPageImagesHolder li {
+    height: 11rem;
+    margin: 1rem;
+  }
+
+  #featuresPageSection #featuresPageImagesHolder {
+    height: 700px;
+    width: 95%;
+    margin: 0 auto;
   }
 }

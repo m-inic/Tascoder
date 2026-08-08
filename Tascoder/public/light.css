@@ -393,14 +393,24 @@
   color: gold;
 }
 
-#featuresInfoHolder .featuresInfo:nth-child(1) {
-  background: none;
-}
+@media (max-width: 750px) {
+  #featuresInfoHolder .featuresInfo:nth-child(1) {
+    background: linear-gradient(45deg, #c6c6c6db, #c6c6c6db);
+    max-height: 461px;
+    min-width: 255px;
+  }
 
-#featuresInfoHolder .featuresInfo:nth-child(2) {
-  background: none;
-}
+  #featuresInfoHolder .featuresInfo:nth-child(2) {
+    background: linear-gradient(45deg, #c6c6c6db, #c6c6c6db);
+    max-height: 461px;
+    min-width: 255px;
+    margin: 5% 0 83px 0px;
+  }
 
-#featuresInfoHolder .featuresInfo:nth-child(3) {
-  background: none;
+  #featuresInfoHolder .featuresInfo:nth-child(3) {
+    background: linear-gradient(45deg, #c6c6c6db, #c6c6c6db);
+    max-height: 540px;
+    min-width: 255px;
+    bottom: 4px;
+  }
 }
