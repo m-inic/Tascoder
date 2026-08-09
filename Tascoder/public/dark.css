@@ -481,4 +481,12 @@ nav {
     min-width: 255px;
     bottom: 4px;
   }
+
+  #root .featuresSectionSegment::before {
+    background: linear-gradient(90deg, #0f17286e, #0f202800);
+  }
+
+  #root .featuresSectionSegment::after {
+    background: linear-gradient(270deg, #0f17286e, #0f202800);
+  }
 }

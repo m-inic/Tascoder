@@ -247,6 +247,8 @@ function toggleHambMenu() {
             </div>
           </button>
         </ul>
+        <div id={menuOpen  ? "halfCircleMenuBackdrop" : ""} onClick={toggleHambMenu}>
+        </div>
         </div>
       </nav>
     </>

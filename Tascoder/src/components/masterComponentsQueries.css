@@ -942,6 +942,7 @@
   #featuresPageSection #featuresPageImagesHolder ul {
     flex-wrap: wrap;
     height: 100%;
+    width: 60%;
   }
 
   #featuresPageSection #featuresPageImagesHolder li {
@@ -950,8 +951,18 @@
   }
 
   #featuresPageSection #featuresPageImagesHolder {
-    height: 700px;
+    height: 860px;
     width: 95%;
     margin: 0 auto;
+  }
+
+  #featuresPageSection #carouselHolder .wavesFeaturesPage1 {
+    top: 153%;
+    width: 750px;
+  }
+
+  #featuresPageSection #carouselHolder .wavesFeaturesPage2 {
+    bottom: -120%;
+    width: 750px;
   }
 }
