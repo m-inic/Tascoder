@@ -461,6 +461,10 @@ nav {
   margin: 0;
 }
 
+#dealsFAQ {
+    color: white
+  }
+
 @media (max-width: 750px) {
   #featuresInfoHolder .featuresInfo:nth-child(1) {
     background: #ffffffba;

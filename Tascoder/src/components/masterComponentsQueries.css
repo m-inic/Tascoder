@@ -965,4 +965,21 @@
     bottom: -120%;
     width: 750px;
   }
+
+  #dealsTableSection #tableHolder {
+    width: 100%;
+    border: none;
+  }
+
+  #dealsNamesHolder .dealsNames h3 {
+    font-size: 18px;
+}
+
+.dealsNames .dealsPrices p {
+font-size: 26px;
+}
+
+.dealsNames .dealsPrices span {
+  font-size: 14px;
+}
 }
