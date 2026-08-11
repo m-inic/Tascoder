@@ -255,6 +255,14 @@
     margin: 100px 0 -90px 0;
   }
 
+  #dealsComparisonHolder .tablesDealsPage tr {
+    padding-left: 8px;
+  }
+
+  #dealsNamesHolder .dealsNames {
+    width: 24%;
+  }
+
   /*#####################################################################
   ####################### SUPPORT PAGE ################################
   #####################################################################*/
@@ -973,13 +981,48 @@
 
   #dealsNamesHolder .dealsNames h3 {
     font-size: 18px;
-}
+  }
 
-.dealsNames .dealsPrices p {
-font-size: 26px;
-}
+  .dealsNames .dealsPrices p {
+    font-size: 26px;
+  }
 
-.dealsNames .dealsPrices span {
-  font-size: 14px;
-}
+  .dealsNames .dealsPrices span {
+    font-size: 14px;
+  }
+
+  #tableHolder #dealsComparisonHolder {
+    height: 1428px;
+  }
+
+  #dealsNamesHolder .dealsNames {
+    width: 33%;
+  }
+
+  .dealsNames .dealsPrices {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dealsNames .dealsPrices span {
+    width: 5rem;
+  }
+
+  .tablesDealsPage td {
+    width: 21%;
+  }
+
+  #dealsTableSection #dealsPageStartNow h2 {
+    font-size: 30px;
+    width: 85%;
+  }
+
+  #dealsTableSection #dealsPageStartNow {
+    margin: 55px 0 -90px 0;
+  }
+
+  #dealsTableSection #dealsPageStartNow p {
+    text-align: center;
+      width: 95%;
+  }
 }
