@@ -1023,6 +1023,32 @@
 
   #dealsTableSection #dealsPageStartNow p {
     text-align: center;
-      width: 95%;
+    width: 95%;
+  }
+
+  #startNowSection #startNowLeftside {
+    transform: skewX(0deg);
+    left: 0;
+    width: 100%;
+  }
+
+  #startNowLeftside #startNowDescriptionHolder {
+    transform: skewX(0deg);
+    left: unset;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  #root #startNowSection {
+    margin-bottom: -110px;
+    padding-right: unset;
+    flex-direction: column;
+  }
+
+  #startNowLeftside #startNowDescriptionHolder p {
+    width: 85%;
+    font-size: 20px;
+    text-align: center;
+    max-width: 520px;
   }
 }
