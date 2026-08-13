@@ -462,8 +462,8 @@ nav {
 }
 
 #dealsFAQ {
-    color: white
-  }
+  color: white;
+}
 
 @media (max-width: 750px) {
   #featuresInfoHolder .featuresInfo:nth-child(1) {
@@ -492,5 +492,10 @@ nav {
 
   #root .featuresSectionSegment::after {
     background: linear-gradient(270deg, #0f17286e, #0f202800);
+  }
+
+  .halfCircleMenu #halfCircleMenuList {
+    position: relative;
+    bottom: 10rem;
   }
 }

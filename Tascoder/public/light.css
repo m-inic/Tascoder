@@ -413,4 +413,9 @@
     min-width: 255px;
     bottom: 4px;
   }
+
+  .halfCircleMenu #halfCircleMenuList {
+    position: relative;
+    bottom: 10rem;
+  }
 }

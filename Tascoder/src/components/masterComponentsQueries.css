@@ -1051,4 +1051,46 @@
     text-align: center;
     max-width: 520px;
   }
+
+  #tscAppSection #tscLeftsideHolder {
+    position: fixed;
+    right: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    bottom: 52px;
+    z-index: 2;
+  }
+
+  #tscLeftsideHolder #tscSettingsHolder {
+    display: none;
+  }
+
+  #tscAppSection #tscLeftsideHolder #tscAppSidebar {
+    background: #ffffff00;
+    border-right: none;
+    left: 0;
+  }
+
+  #tscLeftsideHolder #tscAppSidebar menu li {
+    background-color: #00000000;
+    font-size: 18px;
+  }
+
+  #tscAppSidebar .tscAppSideLinks {
+    width: 110px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  #tscLeftsideHolder #tscAppSidebar menu div {
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* .halfCircleMenu #halfCircleMenuList {
+    position: relative;
+    bottom: 10rem;
+  } */
 }

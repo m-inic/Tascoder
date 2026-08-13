@@ -3,8 +3,13 @@ import "./masterComponentsQueries.css";
 import logo from "../assets/tascoderLogo.png";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 export default function MainHeader() {
+  const location = useLocation();
+
+  const isSpecialPage = location.pathname === '/tascoderApp';
+
   const [navBg, setNavBg] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -208,7 +213,7 @@ function toggleHambMenu() {
           <span className={menuOpen ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"}></span>
         </div>
         <div className={menuOpen  ? "halfCircleMenu" : "burgBtnIconHolderRemove"}>
-          <ul id="halfCircleMenuList">
+          <ul id={isSpecialPage ? "" :"halfCircleMenuList"} className={isSpecialPage ? "halfCircleMenuListCl" : ""}>
           <li>
             <Link to="/features" onClick={scrollToTop}>
               features
