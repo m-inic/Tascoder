@@ -10,6 +10,11 @@ export default function TascoderApp() {
   const [taskText, setTaskText] = useState("");
   const [isImportant, setIsImportant] = useState(false);
   const [view, setView] = useState("tasks");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function toggleHambMenu() {
+    setMenuOpen((prev) => !prev);
+  }
 
   const [tasks, setTasks] = useState(() => {
     try {
@@ -98,11 +103,11 @@ export default function TascoderApp() {
 
   return (
     <>
-      <MainHeader></MainHeader>
+      <MainHeader appMenuOpen={menuOpen} onToggleAppMenu={toggleHambMenu}></MainHeader>
       <section id="tscAppSection">
         <div id="tscLeftsideHolder" data-open="true">
           <div id="tscAppSidebar" data-open="true">
-            <menu>
+            <menu id={menuOpen ? "tscAppSidebarMenu" : ""}>
               <li>
                 <div>
                   <svg

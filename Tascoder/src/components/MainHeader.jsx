@@ -3,19 +3,19 @@ import "./masterComponentsQueries.css";
 import logo from "../assets/tascoderLogo.png";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 export default function MainHeader() {
   const location = useLocation();
 
-  const isSpecialPage = location.pathname === '/tascoderApp';
+  const isSpecialPage = location.pathname === "/tascoderApp" && screen.width <= 750;
 
   const [navBg, setNavBg] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
-function toggleHambMenu() {
-  setMenuOpen((prev) => !prev);
-}
+  function toggleHambMenu() {
+    setMenuOpen((prev) => !prev);
+  }
 
   function useWindowWidth() {
     const [widthScreen, setWidthScreen] = useState(() =>
@@ -206,54 +206,86 @@ function toggleHambMenu() {
           </button>
         </ul>
       </div> */}
-        <div id="burgBtnIconHolder"
-  className={menuOpen ? "burgBtnIconHolder burgBtnIconHolderHovered" : "burgBtnIconHolder"}
-  onClick={toggleHambMenu}>
-          <span className={menuOpen ? "span1BurgBtn span1BurgBtnHovered" : "span1BurgBtn"}></span>
-          <span className={menuOpen ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"}></span>
+        <div
+          id="burgBtnIconHolder"
+          className={
+            menuOpen
+              ? "burgBtnIconHolder burgBtnIconHolderHovered"
+              : "burgBtnIconHolder"
+          }
+          onClick={toggleHambMenu}
+        >
+          <span
+            className={
+              menuOpen ? "span1BurgBtn span1BurgBtnHovered" : "span1BurgBtn"
+            }
+          ></span>
+          <span
+            className={
+              menuOpen ? "span2BurgBtn span2BurgBtnHovered" : "span2BurgBtn"
+            }
+          ></span>
         </div>
-        <div className={menuOpen  ? "halfCircleMenu" : "burgBtnIconHolderRemove"}>
-          <ul id={isSpecialPage ? "" :"halfCircleMenuList"} className={isSpecialPage ? "halfCircleMenuListCl" : ""}>
-          <li>
-            <Link to="/features" onClick={scrollToTop}>
-              features
-            </Link>
-          </li>
-          <li>
-            <Link to="/deals" onClick={scrollToTop}>
-              deals
-            </Link>
-          </li>
-          <li>
-            <Link to="/support" onClick={scrollToTop}>
-              support
-            </Link>
-          </li>
-          {isLoggedIn ? (
-            <li>
-              <Link id="tscLogoutBtn" className="halfCircleLogOut" onClick={handleLogout}>
-                log out
-              </Link>
-            </li>
-          ) : (
-            <li id="lastNavEl">
-              <Link to="/startNow" id="navBtn" className="navBtnStart" onClick={scrollToTop}>
-                start now
-              </Link>
-            </li>
-          )}
-          <button
-            className="tscSettingsBtns"
-            id="tscBallBtn"
-            onClick={handleThemeToggle}
+        <div
+          className={menuOpen ? "halfCircleMenu" : "burgBtnIconHolderRemove"}
+        >
+          <ul
+            id={isSpecialPage ? "" : "halfCircleMenuList"}
+            className={isSpecialPage ? "halfCircleMenuListCl" : ""}
           >
-            <div id="tscBallHolder">
-              <div className={`tscBall ${clicked ? "tscBallLeft" : ""}`}></div>
-            </div>
-          </button>
-        </ul>
-        <div id={menuOpen  ? "halfCircleMenuBackdrop" : ""} onClick={toggleHambMenu}>
-        </div>
+            <li>
+              <Link to="/features" onClick={scrollToTop}>
+                features
+              </Link>
+            </li>
+            <li>
+              <Link to="/deals" onClick={scrollToTop}>
+                deals
+              </Link>
+            </li>
+            <li>
+              <Link to="/support" onClick={scrollToTop}>
+                support
+              </Link>
+            </li>
+            {isLoggedIn ? (
+              <li>
+                <Link
+                  id="tscLogoutBtn"
+                  className="halfCircleLogOut"
+                  onClick={handleLogout}
+                >
+                  log out
+                </Link>
+              </li>
+            ) : (
+              <li id="lastNavEl">
+                <Link
+                  to="/startNow"
+                  id="navBtn"
+                  className="navBtnStart"
+                  onClick={scrollToTop}
+                >
+                  start now
+                </Link>
+              </li>
+            )}
+            <button
+              className="tscSettingsBtns"
+              id="tscBallBtn"
+              onClick={handleThemeToggle}
+            >
+              <div id="tscBallHolder">
+                <div
+                  className={`tscBall ${clicked ? "tscBallLeft" : ""}`}
+                ></div>
+              </div>
+            </button>
+          </ul>
+          <div
+            id={menuOpen ? "halfCircleMenuBackdrop" : ""}
+            onClick={toggleHambMenu}
+          ></div>
         </div>
       </nav>
     </>
