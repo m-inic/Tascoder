@@ -8,7 +8,7 @@ import Start from "./pages/start/Start.jsx";
 import FeaturesPage from "./pages/features/FeaturesPage.jsx";
 import Support from "./pages/support/Support.jsx";
 import DealsPage from "./pages/deals/DealsPage.jsx";
-import TascoderApp from "./pages/tascoderApp/tascoderApp.jsx";
+import TascoderApp from "./pages/tascoderApp/TascoderApp.jsx";
 
 const router = createBrowserRouter([
   {
