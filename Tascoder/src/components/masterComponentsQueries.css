@@ -713,6 +713,10 @@
     height: 1000px;
   }
 
+  #root #availableOptionsTitleHolder h2 {
+    font-size: 64px;
+  }
+
   #root #availableOptionsSection .availableOptionsTextsHolder {
     height: 100%;
     width: 48%;

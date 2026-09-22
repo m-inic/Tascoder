@@ -23,8 +23,8 @@ const articles = [
       "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
     profile: {
       img: pfpBun1,
-      name: "Zus Toni",
-      role: "CEO at ZMO (Zus Mafia Organisation)",
+      name: "Bun Toni",
+      role: "CEO at BMO (Bun Mafia Organisation)",
     },
     items: [
       {
@@ -55,8 +55,8 @@ const articles = [
       "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
     profile: {
       img: pfpBun2,
-      name: "Zus Kit",
-      role: "Secretary and administrative operations, ZMO",
+      name: "Bun Kit",
+      role: "Secretary and administrative operations, BMO",
     },
     items: [
       {
@@ -87,8 +87,8 @@ const articles = [
       "Praesent non ornare arcu. Aenean sollicitudin lacinia nisl, eu condimentum metus pharetra ac. Aenean auctor tellus libero, non interdum nisi pretium eu. Sed dapibus eu nisl a aliquet. Integer a lacinia justo.",
     profile: {
       img: pfpBun3,
-      name: "Zus Maus",
-      role: "Delivery and transportation, ZMO",
+      name: "Bun Maus",
+      role: "Delivery and transportation, BMO",
     },
     items: [
       {

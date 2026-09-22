@@ -11,10 +11,10 @@ export default function Landing() {
       <section id="landing">
         <div id="landingHeading">
           <h1>
-            Radimo <span>jako</span>.
+            Working <span>hard</span>.
           </h1>
           <h3>
-            Dok ne bude jos jace i jace i da bude najjace, neki jak broj +100k
+            Until we make it to the big numbers +100k
           </h3>
           <ul>
             <li>

@@ -14,23 +14,23 @@ export default function Intro() {
   const cards = [
     {
       id: 1,
-      title: "Bnnuy za compom🤔",
-      text: "Svakim potevima kada zus uci, on stavi naocaru i razmislja o meslima.",
+      title: "Bunny reader🤔",
+      text: "Always when he reads, he puts his glasses on.",
     },
     {
       id: 2,
-      title: "Bnnuy dasu🦁",
-      text: "Ovo odvazno zoso se ne boji od NIKHIM, e ponim voli tocu",
+      title: "Strong bunny🦁",
+      text: "A bunny full of pride, fearless and feisty.",
     },
     {
       id: 3,
-      title: "Bnnuy mali🐁",
-      text: "Mali zos na sliki lici na poljskem mesevema, e nekad eh pomesaju",
+      title: "Small bunny🐁",
+      text: "He is commonly mistaken for being a field mouse.",
     },
     {
       id: 4,
-      title: "Bnnuy designer💻",
-      text: "Ovi zos je onaj kem je napravio ovaj sajt, on pise ovaj TEXT",
+      title: "Bunny dev💻",
+      text: "This one is responsible for making the website.",
     },
   ];
 
